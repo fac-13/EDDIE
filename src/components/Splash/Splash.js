@@ -12,9 +12,10 @@ class Splash extends React.Component{
             this.setState({ redirect: true })
         }, 2000)
     }
+
     render() {
-        const { redirect } = this.state;
-        
+     const { redirect } = this.state
+   
      if (!redirect) {
         return (
             <React.Fragment>
@@ -70,6 +71,5 @@ class Splash extends React.Component{
      }
     } 
 }
-    
-    
+
 export default Splash;
