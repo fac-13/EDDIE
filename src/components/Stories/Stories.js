@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home = () => (
+const Stories = () => (
   <React.Fragment>
     <header>
-      <h1>Home</h1>
+      <h1>Stories</h1>
     </header>
   </React.Fragment>
 );
 
-export default Home;
+export default Stories;

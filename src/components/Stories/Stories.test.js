@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 
-import Home from './Home';
+import Stories from './Stories';
 
-describe('test Home', () => {
+describe('test Stories', () => {
   test('displays Header', () => {
-    const { container } = render(<Home />);
+    const { container } = render(<Stories />);
     const actual = container.querySelector('h1').textContent;
-    expect(actual).toEqual('Home');
+    expect(actual).toEqual('Stories');
   });
 });
