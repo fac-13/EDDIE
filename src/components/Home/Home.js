@@ -1,10 +1,10 @@
 import React from 'react';
 
+import Header from '../Header/Header';
+
 const Home = () => (
   <React.Fragment>
-    <header>
-      <h1>Home</h1>
-    </header>
+    <Header title="Home" />
   </React.Fragment>
 );
 
