@@ -1,0 +1,26 @@
+:root {
+   --blue: #B8F7F1;
+   --darkBlue: #1A5F67;
+}
+
+body{
+  margin:0;
+  padding:0;
+  height: 100vh;   
+}
+.container__splash{
+    background-color:var(--blue);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: var(--darkBlue)
+}
+
