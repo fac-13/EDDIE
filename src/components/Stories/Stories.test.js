@@ -6,7 +6,7 @@ import Stories from './Stories';
 describe('test Stories', () => {
   test('displays Header', () => {
     const { container } = render(<Stories />);
-    const actual = container.querySelector('header');
-    expect(actual).toBeTruthy;
+    const actual = container.querySelector('h1').textContent;
+    expect(actual).toEqual('Stories');
   });
 });
