@@ -5,9 +5,9 @@ import Button from '../Button';
 const Theory = () => (
   <React.Fragment>
     <article>
-     <Button link="causes" value="Causes"/>
-     <Button link="mechanism" value="Mechanism"/>
-     <Button link="myths" value="Myths"/>     
+     <Button class="button__theory" link="causes" value="Causes"/>
+     <Button class="button__theory" link="mechanism" value="Mechanism"/>
+     <Button class="button__theory" link="myths" value="Myths"/>     
      </article>
   </React.Fragment>
 );
