@@ -6,7 +6,7 @@ import Home from './Home';
 describe('test Home', () => {
   test('displays Header', () => {
     const { container } = render(<Home />);
-    const actual = container.querySelector('header');
-    expect(actual).toBeTruthy;
+    const actual = container.querySelector('h1').textContent;
+    expect(actual).toEqual('Home');
   });
 });
