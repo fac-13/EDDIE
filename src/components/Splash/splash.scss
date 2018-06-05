@@ -1,7 +1,6 @@
-:root {
-   --blue: #B8F7F1;
-   --darkBlue: #1A5F67;
-}
+
+   $blue: #B8F7F1;
+   $darkBlue: #1A5F67;
 
 body{
   margin:0;
@@ -9,7 +8,7 @@ body{
   height: 100vh;   
 }
 .container__splash{
-    background-color:var(--blue);
+    background-color: $blue;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -21,6 +20,6 @@ body{
 .heading{
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    color: var(--darkBlue)
+    color: $darkBlue;
 }
 
