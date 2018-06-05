@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-
 import Home from './Home';
 
 describe('test Home', () => {
