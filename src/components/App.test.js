@@ -7,7 +7,7 @@ import App from './App';
 describe('test App', () => {
   test('displays Home', () => {
     const { container } = render(
-      <MemoryRouter initialEntries={['/']}>
+      <MemoryRouter initialEntries={['/home']}>
         <App />
       </MemoryRouter>
     );
