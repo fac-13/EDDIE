@@ -2,16 +2,16 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import { MemoryRouter } from 'react-router-dom';
 
-import Home from './Home';
+import Header from './Header';
 
-describe('test Home', () => {
-  test('displays Header', () => {
+describe('test Header', () => {
+  test('displays correct title', () => {
     const { container } = render(
-      <MemoryRouter initialEntries={['/home']}>
-        <Home />
+      <MemoryRouter initialEntries={['/stories']}>
+        <Header title="Stories" />
       </MemoryRouter>
     );
     const actual = container.querySelector('h1').textContent;
-    expect(actual).toEqual('Home');
+    expect(actual).toEqual('Stories');
   });
 });
