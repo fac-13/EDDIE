@@ -10,7 +10,7 @@ $whiteText:#f8f8f8;
     background-image: url("../../../assets/forest.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150vh;
+    background-size: 250% 250%;
     color:$whiteText;
     font-family: Lato;
     @include flex-container(column, space-around, center);
