@@ -1,0 +1,53 @@
+@import '../../_reset.scss';
+@import '../../_mixins.scss';
+$blue: #b8f7f1;
+$darkBlue: #1a5f67;
+$whiteText:#f8f8f8;
+
+.container__home{
+    height: 100vh;
+    width:100vw;
+    background-image: url("../../../assets/forest.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150vh;
+    color:$whiteText;
+    font-family: Lato;
+    @include flex-container(column, space-around, center);
+}
+
+.container__blurb{
+    background-color: $darkBlue;
+    border-radius:10px;
+    opacity: 0.8;
+    height: 10rem;
+    max-width: 90%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    @include flex-container(column, space-around, center);
+}
+
+.container__buttons{
+    min-width: 80%;
+    @include flex-container(row, space-between, center);
+}
+
+.button__home{
+    background-color: $darkBlue;
+    border-radius: 5px;
+    color:$whiteText;
+    height:30px;
+    width:80px;
+    box-shadow: 1px 4px 10px $darkBlue;
+    border:none;
+    text-transform: uppercase;
+    &:focus{
+        cursor: pointer;
+        box-shadow: 0 0 10px $darkBlue;
+    }
+    &:active{
+        outline:none;
+        box-shadow: 0 0 10px $darkBlue;
+    }
+}

@@ -1,19 +1,24 @@
 import React from 'react';
 import Button from '../Button';
+import './home.scss'
 
 const Home = () => (
   <React.Fragment>
-    <article>
+    <article className="container__home">
+  <div className="container__blurb">
       <p>
       1 in 3 of sexually active men experience difficulties getting or keeping an erection. 
       </p>
       <p>
       This app has information and tools to help you improve your sex life.      
       </p>
-     <Button className="home__button" link="stories">Stories</Button>
-     <Button className="home__button" link="theory">Theory</Button>
-     <Button className="home__button" link="resources">Resources</Button>
-     </article>
+      </div>    
+    <div className="container__buttons">    
+     <Button className="button__home" link="stories">Stories</Button>
+     <Button className="button__home" link="theory">Theory</Button>
+     <Button className="button__home" link="resources">Resources</Button>
+   </div>
+      </article>
   </React.Fragment>
 );
 
