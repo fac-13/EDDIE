@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 import { MemoryRouter } from 'react-router-dom';
-
 import Home from './Home';
 
 describe('test Home', () => {
@@ -11,7 +10,7 @@ describe('test Home', () => {
         <Home />
       </MemoryRouter>
     );
-    const actual = container.querySelector('h1').textContent;
-    expect(actual).toEqual('Home');
+    const actual = container.querySelectorAll('p')[0].textContent.includes('sexually');
+    expect(actual).toBeTruthy();
   });
 });
