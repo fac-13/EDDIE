@@ -2,13 +2,13 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import { MemoryRouter } from 'react-router-dom';
 
-import Stories from './Stories';
+import Header from './Header';
 
-describe('test Stories', () => {
-  test('displays Header', () => {
+describe('test Header', () => {
+  test('displays correct title', () => {
     const { container } = render(
       <MemoryRouter initialEntries={['/stories']}>
-        <Stories />
+        <Header title="Stories" />
       </MemoryRouter>
     );
     const actual = container.querySelector('h1').textContent;
