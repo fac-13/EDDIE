@@ -1,10 +1,9 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 const Mechanism = () => (
   <React.Fragment>
-    <header>
-      <h1>Mechanism</h1>
-    </header>
+    <Header title="Mechanism" />
   </React.Fragment>
 );
 

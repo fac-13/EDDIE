@@ -1,8 +1,11 @@
 import React from 'react';
 import Button from '../Button';
+import Header from '../Header/Header'
 
 const Resources = () => (
   <React.Fragment>
+    <Header title="Resources" />
+
     <article>
 
       <Button className="resounces__self" link="stories" >Male Mindful Self Practice</Button>

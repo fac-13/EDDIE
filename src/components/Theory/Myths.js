@@ -1,12 +1,9 @@
 import React from 'react';
+import Header from '../Header/Header';
 
 const Myths = () => (
   <React.Fragment>
-    <header>
-      <h1>Myths of male sexuality</h1>
-    </header>
-
-
+    <Header title="Myths of male sexuality" />
   </React.Fragment>
 );
 
