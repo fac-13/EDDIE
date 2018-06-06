@@ -6,8 +6,38 @@ import Carousel from '../Carousel/Carousel';
 // Data for carousel
 const SlidesData = [
   {
+    name: 'Daniel',
+    about: 'Married 25 years, has 1 child',
+    symptoms: [
+      'Smoker',
+      'Diabetic',
+      'ED for more than 10 years',
+      'Impacting on relationship'
+    ]
+  },
+  {
+    name: 'Jorge',
+    about: '22 years old',
+    symptoms: [
+      'Moved to London last year to study',
+      'Has a girlfriend of 6 months',
+      'He can get an erection but soon after he loses it',
+      'Has no difficulties when he masturbates'
+    ]
+  },
+  {
+    name: 'Martin',
+    about: '32 years old',
+    symptoms: [
+      'His 3-year relationship to another man ended recently',
+      'Has used a medication for ED but didn’t work ',
+      'Takes anti-depressants',
+      'Has casual sex but for the first time he can’t get an erection'
+    ]
+  },
+  {
     name: 'Peter',
-    age: '19',
+    about: '19 years old',
     symptoms: [
       'Worried about his penis becoming smaller',
       'ED the first time he tried to have sex with a partner 2 years ago',
