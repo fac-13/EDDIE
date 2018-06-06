@@ -21,7 +21,7 @@ $breakpoint-desktop: 992px;
   height: 100%;
   width: 260 / 360 * 100%;
   background-color: $white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   text-align: center;
 
@@ -37,7 +37,7 @@ $breakpoint-desktop: 992px;
   font-size: 1.5rem;
 }
 
-.slide__age {
+.slide__about {
   font-family: $header-font;
   font-weight: bold;
   font-size: 1.1rem;
@@ -50,19 +50,15 @@ $breakpoint-desktop: 992px;
   border-radius: 5px;
   color: $white;
 
-  &--0 {
+  &--green {
     background-color: $green;
   }
 
-  &--1 {
+  &--coral {
     background-color: $coral;
   }
 
-  &--2 {
-    background-color: $green;
-  }
-
-  &--3 {
+  &--slate {
     background-color: $slate;
   }
 }
@@ -77,7 +73,7 @@ $breakpoint-desktop: 992px;
 .carousel__arrow {
   height: 410 / 430 * 100%;
   width: 20 / 360 * 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 
   &:focus {
