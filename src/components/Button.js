@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import propTypes from 'prop-types';
 
-function Button(props) {
-  return (
-    <Link to={props.link}>
-    <button className={props.class}>
-      {props.value}
+const Button = ({ link, className, children}) => 
+   (
+    <Link to={link}>
+    <button className={className}>
+      {children}
    </button>
    </Link>
     )
-}
 
+Button.propTypes = { 
+  link: propTypes.string,
+  className: propTypes.string,
+  children: propTypes.string
+}
 
 export default Button;

@@ -5,9 +5,9 @@ const Resources = () => (
   <React.Fragment>
     <article>
 
-      <Button class="button__self" link="stories" value="Male Mindful Self Practice"/>
-      <Button class="button__kegel" link="stories" value="Kegel exercises for men"/>
-      <Button class="button__sensate" link="stories" value="Sensate focus"/>
+      <Button className="resounces__self" link="stories" >Male Mindful Self Practice</Button>
+      <Button className="resources__kegel" link="stories" >Kegel exercises for men</Button>
+      <Button className="resources__sensate" link="stories">Sensate focus</Button>
 
       <h3>Recommended reading</h3>
 
