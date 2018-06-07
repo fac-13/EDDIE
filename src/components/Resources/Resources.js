@@ -1,13 +1,18 @@
 import React from 'react';
-import Button from '../Button';
+import Button from '../Button/Button';
 
 const Resources = () => (
   <React.Fragment>
     <article>
-
-      <Button className="resounces__self" link="stories" >Male Mindful Self Practice</Button>
-      <Button className="resources__kegel" link="stories" >Kegel exercises for men</Button>
-      <Button className="resources__sensate" link="stories">Sensate focus</Button>
+      <Button className="resounces__self" link="stories">
+        Male Mindful Self Practice
+      </Button>
+      <Button className="resources__kegel" link="stories">
+        Kegel exercises for men
+      </Button>
+      <Button className="resources__sensate" link="stories">
+        Sensate focus
+      </Button>
 
       <h3>Recommended reading</h3>
 
@@ -22,8 +27,7 @@ const Resources = () => (
 
       <h4>The Massage Secrets for Lovers</h4>
       <h5>by Andrew Stanway</h5>
-
-     </article>
+    </article>
   </React.Fragment>
 );
 

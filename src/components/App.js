@@ -1,15 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
+import './app.scss';
+
 import Splash from './Splash/Splash';
 import Home from './Home/Home';
 import Stories from './Stories/Stories';
 import Theory from './Theory/Theory';
-import Causes from './Theory/Causes';
-import Mechanism from './Theory/Mechanism';
-import Myths from './Theory/Myths';
+import Causes from './Causes/Causes';
+import Mechanism from './Mechanism/Mechanism';
+import Myths from './Myths/Myths';
 import Resources from './Resources/Resources';
 import ErrorPage from './ErrorPage/ErrorPage';
-
 
 const App = () => (
   <React.Fragment>
