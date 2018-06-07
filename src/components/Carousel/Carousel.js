@@ -41,46 +41,12 @@ const Slide = ({ index, activeIndex, slide }) => (
     <h2 className="slide__name">{slide.name}</h2>
     <h3 className="slide__about">{slide.about}</h3>
     {slide.symptoms.map((symptom, index) => {
-      let color = '';
-      if (slide.name === 'Daniel') {
-        if (index === 3) {
-          color = 'coral';
-        } else if (index === 2) {
-          color = 'slate';
-        } else {
-          color = 'green';
-        }
-      }
-      if (slide.name === 'Jorge') {
-        if (index === 1) {
-          color = 'coral';
-        } else if (index === 3) {
-          color = 'green';
-        } else {
-          color = 'slate';
-        }
-      }
-      if (slide.name === 'Martin') {
-        if (index === 0) {
-          color = 'coral';
-        } else if (index === 3) {
-          color = 'slate';
-        } else {
-          color = 'green';
-        }
-      }
-      if (slide.name === 'Peter') {
-        if (index === 1) {
-          color = 'coral';
-        } else if (index === 2) {
-          color = 'green';
-        } else {
-          color = 'slate';
-        }
-      }
       return (
-        <div className={`slide__symptom slide__symptom--${color}`} key={index}>
-          <p className="slide__symptom-text">{symptom}</p>
+        <div
+          className={`slide__symptom slide__symptom--${symptom.type}`}
+          key={index}
+        >
+          <p className="slide__symptom-text">{symptom.text}</p>
         </div>
       );
     })}

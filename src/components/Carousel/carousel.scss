@@ -48,15 +48,15 @@
   border-radius: 5px;
   color: $white;
 
-  &--green {
+  &--physical {
     background-color: $green;
   }
 
-  &--coral {
+  &--relational {
     background-color: $coral;
   }
 
-  &--slate {
+  &--psychological {
     background-color: $slate;
   }
 }
