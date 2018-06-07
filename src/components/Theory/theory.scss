@@ -1,3 +1,4 @@
+@import '../../_styleguide.scss';
 @import '../../_reset.scss';
 @import '../../_mixins.scss';
 
@@ -15,12 +16,12 @@
 .theory__button {
 width: 250px;
 height: 70px;
-background: rgba(248, 254, 253, 0.95);
+background: $white;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 font-size: 150%;
 text-align: center;
 text-transform: uppercase;
-color: #1A5F67;
+color: $darkBlue;
 padding: 1%;
 margin: 5%;
 border: transparent;
@@ -29,5 +30,5 @@ border: transparent;
 .theory__svg {
   position: absolute;
   bottom: 0;
-  z-index: -1;
+  z-index: -1;;
 }
