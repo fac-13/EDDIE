@@ -5,6 +5,10 @@ import './home.scss'
 const Home = () => (
   <React.Fragment>
     <article className="container__home">
+    <header className="header__splash">  
+          <h1 className="splash__title">Eddie</h1>
+          <h5 className="splash__subtitle">your guide to sexual wellbeing</h5>
+          </header>
   <div className="container__blurb">
       <p>
       1 in 3 of sexually active men experience difficulties getting or keeping an erection. 

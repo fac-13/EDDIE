@@ -26,5 +26,5 @@ $darkBlue: #1a5f67;
 
 .header__splash{
   @include flex-container(column, center, center);
-  margin-bottom: 5rem;
+  // margin-bottom: 5rem;
 }

@@ -19,10 +19,6 @@ class Splash extends React.Component {
     if (!redirect) {
       return (
           <div className="splash">
-          <header className="header__splash">  
-          <h1 className="splash__title">Eddie</h1>
-          <h5 className="splash__subtitle">your guide to sexual wellbeing</h5>
-          </header>
                   <svg
             width="172"
             height="170"
