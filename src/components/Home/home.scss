@@ -4,7 +4,8 @@ $blue: #b8f7f1;
 $darkBlue: #1a5f67;
 $whiteText:#f8f8f8;
 
-.container__home{
+
+.home{
     height: 100vh;
     width:100vw;
     background-image: url("../../../assets/forest.svg");
@@ -16,7 +17,23 @@ $whiteText:#f8f8f8;
     @include flex-container(column, space-around, center);
 }
 
-.container__blurb{
+.home__header{
+    @include flex-container(column, center, center);
+  }
+.home__title,
+.home__subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: $darkBlue;
+}
+
+.home__title{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.home__blurb{
     background-color: $darkBlue;
     border-radius:10px;
     opacity: 0.8;
@@ -28,12 +45,12 @@ $whiteText:#f8f8f8;
     @include flex-container(column, space-around, center);
 }
 
-.container__buttons{
+.home__btns{
     min-width: 80%;
     @include flex-container(row, space-between, center);
 }
 
-.button__home{
+.home__btn{
     background-color: $darkBlue;
     border-radius: 5px;
     color:$whiteText;

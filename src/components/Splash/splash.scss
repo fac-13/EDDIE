@@ -10,20 +10,3 @@ $darkBlue: #1a5f67;
   width: 100vw;
   @include flex-container(column, center, center);
 }
-
-.splash__title,
-.splash__subtitle {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  color: $darkBlue;
-}
-
-.splash__title{
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-.header__splash{
-  @include flex-container(column, center, center);
-}
