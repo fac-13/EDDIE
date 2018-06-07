@@ -1,9 +1,8 @@
 import React from 'react';
+import { render } from 'react-testing-library';
 
-import Header from '../Header/Header';
-import Carousel from '../Carousel/Carousel';
+import Carousel from './Carousel';
 
-// Data for carousel
 const SlidesData = [
   {
     name: 'Daniel',
@@ -47,11 +46,16 @@ const SlidesData = [
   }
 ];
 
-const Stories = () => (
-  <React.Fragment>
-    <Header title="Stories" />
-    <Carousel slides={SlidesData} />
-  </React.Fragment>
-);
+describe('test Carousel', () => {
+  test('displays correct title', () => {
+    const { container } = render(<Carousel slides={SlidesData} />);
+    const actual = container.querySelector('h2').textContent;
+    expect(actual).toEqual('Daniel');
+  });
 
-export default Stories;
+  test('displays correct about', () => {
+    const { container } = render(<Carousel slides={SlidesData} />);
+    const actual = container.querySelector('h3').textContent;
+    expect(actual).toEqual('Married 25 years, has 1 child');
+  });
+});

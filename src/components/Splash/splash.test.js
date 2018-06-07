@@ -6,7 +6,7 @@ import Splash from './Splash';
 describe('test Splash', () => {
   test('displays heading', () => {
     const { container } = render(<Splash />);
-    const actual = container.querySelector('h1').textContent;
-    expect(actual).toEqual('Eddie');
+    const actual = container.querySelector('svg');
+    expect(actual).toBeTruthy()
   });
 });

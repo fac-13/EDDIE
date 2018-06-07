@@ -21,7 +21,6 @@ const Theory = () => (
       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 113.114V153.21H360V0C335.893 8.80103 311.835 18.5991 286.989 28.7175C208.146 60.8267 121.378 96.1636 0 113.114Z" transform="translate(0 86.3687) scale(3)" fill="#7CA5A9"/>
       <path fill-rule="evenodd" clip-rule="evenodd" d="M172.634 0V92.7683H0C29.918 77.3401 59.3933 61.1619 88.2316 45.3335C117.067 29.5063 145.266 14.0288 172.634 0Z" transform="translate(562.097 264.695) scale(3)" fill="#FD8489"/>
     </svg>
-    </React.Fragment>
-);
+
 
 export default Theory;
