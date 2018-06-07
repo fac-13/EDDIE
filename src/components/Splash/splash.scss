@@ -2,15 +2,8 @@
 @import '../../_mixins.scss';
 
 .splash {
-  @include flex-container(row, center, center);
+  @include flex-container(column, center, center);
   background-color: $blue;
   height: 100vh;
   width: 100vw;
-}
-
-.splash__title,
-.splash__subtitle {
-  font-family: $header-font;
-  font-weight: 300;
-  color: $darkBlue;
 }
