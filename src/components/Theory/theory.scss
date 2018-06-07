@@ -1,5 +1,4 @@
 @import '../../_styleguide.scss';
-@import '../../_reset.scss';
 @import '../../_mixins.scss';
 
 #root {
@@ -13,7 +12,7 @@
  margin: 1rem auto;
 }
 
-.theory__button {
+.theory__btn {
 width: 250px;
 height: 70px;
 background: $white;
