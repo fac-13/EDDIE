@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 import './carousel.scss';
 
 const LeftArrow = ({ onClick }) => (
-  <div className="carousel__arrow" onClick={onClick} />
+  <div className="carousel__arrow carousel__arrow--left" onClick={onClick} />
 );
 
 LeftArrow.propTypes = {
@@ -12,7 +12,7 @@ LeftArrow.propTypes = {
 };
 
 const RightArrow = ({ onClick }) => (
-  <div className="carousel__arrow" onClick={onClick} />
+  <div className="carousel__arrow carousel__arrow--right" onClick={onClick} />
 );
 
 RightArrow.propTypes = {

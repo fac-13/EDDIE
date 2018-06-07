@@ -1,4 +1,5 @@
-@import '../app.scss';
+@import '../../_styleguide.scss';
+@import '../../_mixins.scss';
 
 .splash {
   @include flex-container(row, center, center);

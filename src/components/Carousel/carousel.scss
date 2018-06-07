@@ -1,7 +1,5 @@
-@import '../app.scss';
-
-// SASS variable for media query breakpoint
-$breakpoint-desktop: 992px;
+@import '../../_styleguide.scss';
+@import '../../_mixins.scss';
 
 .carousel {
   @include flex-container(row, center, center);
