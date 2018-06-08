@@ -82,8 +82,7 @@ const SlidesData = [
       },
       {
         type: 'relational',
-        text:
-          'ED the first time he tried to have sex with a partner 2 years ago'
+        text: 'ED the first time he tried to have sex with a partner 2 years ago'
       },
       {
         type: 'physical',

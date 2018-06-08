@@ -4,10 +4,8 @@ import propTypes from 'prop-types';
 
 const Button = ({ link, className, children}) => 
    (
-    <Link to={link}>
-    <button className={className}>
+    <Link to={link} className={className}>
       {children}
-   </button>
    </Link>
     )
 
