@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
+
 import './home.scss';
 
 const Home = () => (
@@ -18,15 +19,15 @@ const Home = () => (
         </p>
       </div>
       <div className="home__btns">
-        <Button className="home__btn" link="stories">
+        <Link to="stories" className="home__btn">
           Stories
-        </Button>
-        <Button className="home__btn" link="theory">
+        </Link>
+        <Link to="theory" className="home__btn">
           Theory
-        </Button>
-        <Button className="home__btn" link="resources">
+        </Link>
+        <Link to="resources" className="home__btn">
           Resources
-        </Button>
+        </Link>
       </div>
     </article>
   </React.Fragment>

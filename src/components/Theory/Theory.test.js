@@ -10,9 +10,7 @@ describe('test Theory page', () => {
         <Theory />
       </MemoryRouter>
     );
-    const actual = container.querySelectorAll('button')[0].textContent;
+    const actual = container.querySelectorAll('a')[0].textContent;
     expect(actual).toEqual('Causes');
   });
 });
-
-
