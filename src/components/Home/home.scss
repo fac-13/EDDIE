@@ -14,9 +14,7 @@
 }
 
 .home__header {
-  @include flex-container(column,
-  center,
-  center);
+  @include flex-container(column, center, center);
 }
 
 .home__title,
@@ -33,9 +31,7 @@
 }
 
 .home__blurb {
-  @include flex-container(column,
-  space-around,
-  center);
+  @include flex-container(column, space-around, center);
   height: 10rem;
   width: 80%;
   max-width: 600px;
@@ -47,16 +43,9 @@
 }
 
 .home__btns {
-<<<<<<< HEAD
   @include flex-container(row, space-between, center);
   width: 80%;
   max-width: 600px;
-=======
-  @include flex-container(row,
-  space-between,
-  center);
-  min-width: 80%;
->>>>>>> master
 }
 
 .home__btn {
@@ -85,9 +74,9 @@
     opacity: 0.1;
   }
   50% {
-    opacity: 0.5
+    opacity: 0.5;
   }
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
