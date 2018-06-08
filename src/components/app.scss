@@ -12,7 +12,6 @@ body {
   @include flex-container(column, flex-start, center);
   height: 100vh;
   width: 100%;
-  max-width: 1000px;
   font-family: $body-font;
   color: $black;
 }

@@ -5,7 +5,7 @@ import './home.scss';
 
 const Home = () => (
   <React.Fragment>
-    <article className="home">
+    <main className="home">
       <header className="home__header">
         <h1 className="home__title">Eddie</h1>
         <h5 className="home__subtitle">your guide to sexual wellbeing</h5>
@@ -14,7 +14,8 @@ const Home = () => (
         <p>
           1 in 3 of sexually active men experience difficulties getting or
           keeping an erection.
-          <br />
+        </p>
+        <p>
           This app has information and tools to help you improve your sex life.
         </p>
       </div>
@@ -29,7 +30,7 @@ const Home = () => (
           Resources
         </Link>
       </div>
-    </article>
+    </main>
   </React.Fragment>
 );
 
