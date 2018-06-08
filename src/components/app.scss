@@ -1,11 +1,12 @@
 @import '../_styleguide.scss';
 @import '../_reset.scss';
 @import '../_mixins.scss';
-
 body {
-  @include flex-container(column, center, center);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   width: 100vw;
-  background-color: $white;
+  @include flex-container(column, center, center);
 }
 
 #root {

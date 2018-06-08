@@ -28,7 +28,6 @@ $breakpoint: 1000px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   text-align: center;
-
   @media only screen and (min-width: $breakpoint) {
     @include flex-container(column, space-around, center);
     margin-left: 1.5rem;
@@ -38,7 +37,10 @@ $breakpoint: 1000px;
   }
 }
 
-// Content of slides
+.slide__header {
+  @include flex-container(column, center, center);
+}
+
 .slide__name {
   font-family: $header-font;
   font-weight: bold;
@@ -51,30 +53,61 @@ $breakpoint: 1000px;
   font-size: 1.1rem;
 }
 
+.slide__main {
+  position: relative;
+  height: 70%;
+  width: 90%;
+  @include flex-container(row, center, center);
+}
+
+.slide__content {
+  height: 100%;
+  @include flex-container(column, space-between, flex-start);
+}
+
+// Content of slides
 .slide__symptom {
   @include flex-container(column, center, center);
-  height: 55 / 430 * 100%;
-  width: 150 / 260 * 100%;
+  min-height: 20%;
+  max-width: 200px;
+  width: 75%;
+  opacity: 0.8;
+  z-index: 1000;
   border-radius: 5px;
   color: $white;
-
+  font-size: 0.9rem;
   &--physical {
     background-color: $green;
   }
-
   &--relational {
     background-color: $coral;
   }
-
   &--psychological {
     background-color: $slate;
   }
 }
 
+.slide__man {
+  position: absolute;
+  height: 100%;
+  right: 0%;
+  z-index: 0;
+  &--Peter {
+    fill: #7b554c;
+  }
+  &--Martin {
+    fill: rgb(46, 95, 123);
+  }
+  &--Daniel {
+    fill: rgb(41, 101, 60);
+  }
+  &--Jorge {
+    fill: #613e6d;
+  }
+}
+
 .slide__symptom-text {
-  @include flex-container(column, center, center);
-  width: 130 / 150 * 100%;
-  height: 40 / 55 * 100%;
+  width: 95%;
 }
 
 // Carousel arrows
@@ -83,11 +116,9 @@ $breakpoint: 1000px;
   width: 20 / 360 * 100%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-
   &:focus {
     outline: 0;
   }
-
   &:hover {
     opacity: 0.5;
   }
@@ -118,11 +149,9 @@ $breakpoint: 1000px;
   cursor: pointer;
   opacity: 0.15;
   transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
-
   &:hover {
     opacity: 0.5;
   }
-
   &--active {
     &,
     &:hover {
