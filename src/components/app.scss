@@ -5,6 +5,7 @@
 body {
   @include flex-container(column, center, center);
   width: 100vw;
+  background-color: $white;
 }
 
 #root {
@@ -13,6 +14,5 @@ body {
   width: 100%;
   max-width: 1000px;
   font-family: $body-font;
-  background-color: $white;
   color: $black;
 }

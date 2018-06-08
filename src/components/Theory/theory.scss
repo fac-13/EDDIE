@@ -1,0 +1,30 @@
+@import '../../_styleguide.scss';
+@import '../../_mixins.scss';
+
+
+
+.theory {
+ display: flex;
+ flex-direction: column;
+ margin: 1rem auto;
+}
+
+.theory__btn {
+width: 250px;
+height: 70px;
+background: $white;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 150%;
+text-align: center;
+text-transform: uppercase;
+color: $darkBlue;
+padding: 1%;
+margin: 5%;
+border: transparent;
+}
+
+.theory__svg {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;;
+}
