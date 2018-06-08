@@ -18,8 +18,8 @@ class Splash extends React.Component {
 
     if (!redirect) {
       return (
-          <div className="splash">
-                  <svg
+        <div className="splash">
+          <svg className="splash__svg"
             width="172"
             height="170"
             viewBox="0 0 172 170"
@@ -305,7 +305,7 @@ class Splash extends React.Component {
               fill="#1A5F67"
             />
           </svg>
-        </div>
+        </div >
       );
     } else {
       return <Redirect to="/home" />;

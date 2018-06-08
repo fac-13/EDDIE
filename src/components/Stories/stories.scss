@@ -1,0 +1,12 @@
+@import '../../_styleguide.scss';
+@import '../../_mixins.scss';
+.stories {
+  @include flex-container(column, space-around, center);
+  height: 580 / 640 * 100%;
+}
+
+.stories__instructions {
+  width: 80%;
+  text-align: center;
+  height: 50 / 580 *100%;
+}
