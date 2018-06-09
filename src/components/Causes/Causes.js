@@ -1,10 +1,11 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Button from '../Button/Button';
+import Cause from './Cause';
 
-
-const CausesData = {
+const CausesData  = () => [
   {
-  type: 'PHYSICAL',
+    type: 'PHYSICAL',
     items: [
       {
         text: 'Surgery',
@@ -27,7 +28,7 @@ const CausesData = {
       {
         text: 'Pain'
       },
-    ]
+    ],
   text: 'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service'
 },
 {
@@ -55,12 +56,12 @@ const CausesData = {
         text: 'Boredom'
       },
       {
-        text: 'Numbness'
+        text: 'Numbness',
           eg: '(a feeling of disconnection from emotions)'
       }
-    ]
+    ],
   text: 'If you do not experience any difficulties with your erection when masturbating but you experience such difficulties when having sex with a partner, then the causes are 100% psychological-relational.'
-}
+},
 {
   type: 'RELATIONAL',
     items: [
@@ -81,14 +82,14 @@ const CausesData = {
       }
     ]
 }
-};
+];
 
 
 const Causes = () => (
   <React.Fragment>
     <Header title="What causes ED?" />
-    
-    <Button text="STEPS YOU CAN TAKE" />
+    <Cause />
+    <Button link="">STEPS YOU CAN TAKE</Button>
   </React.Fragment>
 );
 
