@@ -14,9 +14,7 @@
 }
 
 .home__header {
-  @include flex-container(column,
-  center,
-  center);
+  @include flex-container(column, center, center);
 }
 
 .home__title,
@@ -33,34 +31,32 @@
 }
 
 .home__blurb {
-  @include flex-container(column,
-  space-around,
-  center);
+  @include flex-container(column, space-around, center);
   height: 10rem;
-  max-width: 90%;
+  width: 80%;
+  max-width: 600px;
   background-color: $darkBlue;
   border-radius: 10px;
   opacity: 0.8;
   box-sizing: border-box;
-  padding: 1rem;
   text-align: center;
 }
 
 .home__btns {
-  @include flex-container(row,
-  space-between,
-  center);
-  min-width: 80%;
+  @include flex-container(row, space-between, center);
+  width: 80%;
+  max-width: 600px;
 }
 
 .home__btn {
+  @include flex-container(row, center, center);
   background-color: $darkBlue;
   border-radius: 5px;
   color: $white;
   height: 30px;
-  width: 80px;
+  width: 100 / 360 * 100%;
   box-shadow: 1px 4px 10px $darkBlue;
-  border: none;
+  text-decoration: none;
   text-transform: uppercase;
   &:focus {
     cursor: pointer;
@@ -78,9 +74,9 @@
     opacity: 0.1;
   }
   50% {
-    opacity: 0.5
+    opacity: 0.5;
   }
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }

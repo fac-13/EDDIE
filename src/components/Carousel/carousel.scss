@@ -1,14 +1,20 @@
 @import '../../_styleguide.scss';
 @import '../../_mixins.scss';
+
+$breakpoint: 1000px;
+
 .carousel {
-  @include flex-container(row, center, center);
+  @include flex-container(row, space-between, center);
   height: 430 / 640 * 100%;
   width: 100%;
+  max-width: 600px;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 // Carousel slides
 .carousel__slides {
-  @include flex-container(column, center, center);
+  @include flex-container(row, center, center);
   height: 100%;
   width: 100%;
 }
@@ -16,18 +22,23 @@
 .slide {
   display: none;
   height: 100%;
+  min-width: 300px;
   width: 260 / 360 * 100%;
   background-color: $white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   text-align: center;
+  @media only screen and (min-width: $breakpoint) {
+    @include flex-container(column, space-around, center);
+    margin-left: 1.5rem;
+  }
   &--active {
     @include flex-container(column, space-around, center);
   }
 }
 
 .slide__header {
-  @include flex-container(column, center, center)
+  @include flex-container(column, center, center);
 }
 
 .slide__name {
@@ -46,12 +57,12 @@
   position: relative;
   height: 70%;
   width: 90%;
-  @include flex-container(row, center, center)
+  @include flex-container(row, center, center);
 }
 
 .slide__content {
   height: 100%;
-  @include flex-container(column, space-between, flex-start)
+  @include flex-container(column, space-between, flex-start);
 }
 
 // Content of slides
@@ -111,6 +122,10 @@
   &:hover {
     opacity: 0.5;
   }
+
+  @media only screen and (min-width: $breakpoint) {
+    display: none;
+  }
 }
 
 // Carousel indicators
@@ -118,6 +133,11 @@
   @include flex-container(row, space-around, center);
   width: 60 / 360 * 100%;
   height: 10 / 640 * 100%;
+  margin-top: 20px;
+
+  @media only screen and (min-width: $breakpoint) {
+    display: none;
+  }
 }
 
 .indicator {
