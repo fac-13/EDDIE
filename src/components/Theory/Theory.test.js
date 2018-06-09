@@ -14,5 +14,3 @@ describe('test Theory page', () => {
     expect(actual).toEqual('Causes');
   });
 });
-
-

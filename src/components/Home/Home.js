@@ -1,10 +1,11 @@
 import React from 'react';
-import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
+
 import './home.scss';
 
 const Home = () => (
   <React.Fragment>
-    <article className="home">
+    <main className="home">
       <header className="home__header">
         <h1 className="home__title">Eddie</h1>
         <h5 className="home__subtitle">your guide to sexual wellbeing</h5>
@@ -13,22 +14,23 @@ const Home = () => (
         <p>
           1 in 3 of sexually active men experience difficulties getting or
           keeping an erection.
-          <br />
+        </p>
+        <p>
           This app has information and tools to help you improve your sex life.
         </p>
       </div>
       <div className="home__btns">
-        <Button className="home__btn" link="stories">
+        <Link to="stories" className="home__btn">
           Stories
-        </Button>
-        <Button className="home__btn" link="theory">
+        </Link>
+        <Link to="theory" className="home__btn">
           Theory
-        </Button>
-        <Button className="home__btn" link="resources">
+        </Link>
+        <Link to="resources" className="home__btn">
           Resources
-        </Button>
+        </Link>
       </div>
-    </article>
+    </main>
   </React.Fragment>
 );
 

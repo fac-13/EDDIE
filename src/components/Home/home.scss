@@ -1,6 +1,5 @@
 @import '../../_styleguide.scss';
 @import '../../_mixins.scss';
-
 .home {
   @include flex-container(column, space-around, center);
   height: 100vh;
@@ -11,11 +10,13 @@
   background-size: 250% 250%;
   color: $white;
   font-family: $header-font;
+  animation: appear 0.8s ease-in-out;
 }
 
 .home__header {
   @include flex-container(column, center, center);
 }
+
 .home__title,
 .home__subtitle {
   font-family: 'Lato', sans-serif;
@@ -32,28 +33,30 @@
 .home__blurb {
   @include flex-container(column, space-around, center);
   height: 10rem;
-  max-width: 90%;
+  width: 80%;
+  max-width: 600px;
   background-color: $darkBlue;
   border-radius: 10px;
   opacity: 0.8;
   box-sizing: border-box;
-  padding: 1rem;
   text-align: center;
 }
 
 .home__btns {
   @include flex-container(row, space-between, center);
-  min-width: 80%;
+  width: 80%;
+  max-width: 600px;
 }
 
 .home__btn {
+  @include flex-container(row, center, center);
   background-color: $darkBlue;
   border-radius: 5px;
   color: $white;
   height: 30px;
-  width: 80px;
+  width: 100 / 360 * 100%;
   box-shadow: 1px 4px 10px $darkBlue;
-  border: none;
+  text-decoration: none;
   text-transform: uppercase;
   &:focus {
     cursor: pointer;
@@ -62,5 +65,18 @@
   &:active {
     outline: none;
     box-shadow: 0 0 10px $darkBlue;
+  }
+}
+
+@keyframes appear {
+  0% {
+    background-color: $blue;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }

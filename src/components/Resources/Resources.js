@@ -1,21 +1,22 @@
 import React from 'react';
-import Button from '../Button/Button';
-import Header from '../Header/Header'
+import { Link } from 'react-router-dom';
+
+import Header from '../Header/Header';
 
 const Resources = () => (
   <React.Fragment>
     <Header title="Resources" />
 
     <article>
-      <Button className="resounces__self" link="stories">
+      <Link to="stories" className="resources__btn resources__btn--self">
         Male Mindful Self Practice
-      </Button>
-      <Button className="resources__kegel" link="stories">
+      </Link>
+      <Link to="stories" className="resources__btn resources__btn--kegel">
         Kegel exercises for men
-      </Button>
-      <Button className="resources__sensate" link="stories">
+      </Link>
+      <Link to="stories" className="resources__btn resources__btn--sensate">
         Sensate focus
-      </Button>
+      </Link>
 
       <h3>Recommended reading</h3>
 

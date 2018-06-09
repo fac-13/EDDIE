@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
+import './stories.scss'
 
 // Data for carousel
 const SlidesData = [
@@ -99,7 +100,10 @@ const SlidesData = [
 const Stories = () => (
   <React.Fragment>
     <Header title="Stories" />
-    <Carousel slides={SlidesData} />
+    <main className="stories">
+      <Carousel slides={SlidesData} />
+      <p className="stories__instructions">Click each item to learn why and how Peter coped with ED</p>
+    </main>
   </React.Fragment>
 );
 
