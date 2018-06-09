@@ -10,7 +10,7 @@ npm i
 ```
 
 ## Tech Stack
-React
-Travis
-Babel
-Sass
+* React
+* Travis
+* Babel
+* Sass
