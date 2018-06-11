@@ -4,11 +4,13 @@ import {
   Slider,
   Slide,
   ButtonBack,
-  ButtonNext,
-  Dot
+  ButtonNext
 } from 'pure-react-carousel';
+
 import propTypes from 'prop-types';
 import styled from 'styled-components';
+
+import Dots from './Dots';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -20,15 +22,15 @@ const StyledCarouselProvider = styled(CarouselProvider)`
 
 const Row = styled.div`
   ${props => props.theme.flexContainer('row', 'space-between', 'center')};
+  width: 100%;
   height: 90%;
-  width: 100vw;
 `;
 
 const StyledButtonBack = styled(ButtonBack)`
   background-color: transparent;
   color: ${props => props.theme.black};
   width: 10%;
-  height: 100%;
+  height: 70%;
   border: none;
   outline: none;
   position: absolute;
@@ -44,7 +46,7 @@ const StyledButtonNext = styled(ButtonNext)`
   background-color: transparent;
   color: ${props => props.theme.black};
   width: 10%;
-  height: 100%;
+  height: 70%;
   border: none;
   outline: none;
   position: absolute;
@@ -151,34 +153,6 @@ const Path = styled.path`
   ${props => (props.name === 'Jorge' ? 'fill: #613e6d' : null)};
 `;
 
-const Dots = styled.div`
-  ${props => props.theme.flexContainer('row', 'space-around', 'center')};
-
-  width: 15%;
-  height: 1rem;
-  margin-top: 20px;
-`;
-
-const StyledDot = styled(Dot)`
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: ${props => props.theme.black};
-  cursor: pointer;
-  outline: none;
-  opacity: 0.15;
-  transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
-  &:hover {
-    opacity: 0.5;
-  }
-  .carousel__dot--selected {
-    &,
-    &:hover {
-      opacity: 0.75;
-    }
-  }
-`;
-
 const Carousel = ({ slides }) => (
   <StyledCarouselProvider
     naturalSlideWidth={360}
@@ -198,7 +172,7 @@ const Carousel = ({ slides }) => (
               <Content>
                 {slide.symptoms.map((symptom, index) => {
                   return (
-                    <Symptom type={symptom.type} key={index}>
+                    <Symptom type={symptom.type} key={`key-${index}`}>
                       <Text>{symptom.text}</Text>
                     </Symptom>
                   );
@@ -217,12 +191,7 @@ const Carousel = ({ slides }) => (
       </StyledSlider>
       <StyledButtonNext>&gt;</StyledButtonNext>
     </Row>
-    <Dots>
-      <StyledDot slide={0} />
-      <StyledDot slide={1} />
-      <StyledDot slide={2} />
-      <StyledDot slide={3} />
-    </Dots>
+    <Dots slides={slides} />
   </StyledCarouselProvider>
 );
 
