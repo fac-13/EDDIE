@@ -42,8 +42,7 @@ const Main = styled.div`
 `;
 
 const Content = styled.div`
-  ${props =>
-    props.theme.flexContainer('column', 'space-between', 'flex-start')};
+  ${props => props.theme.flexContainer('column', 'space-around', 'flex-start')};
   height: 100%;
   width: 100%;
 `;
@@ -72,7 +71,7 @@ const Symptom = styled.div`
 `;
 
 const Intervention = Symptom.extend`
-  height: 100%;
+  height: 87%;
 `;
 
 const Text = styled.p`
