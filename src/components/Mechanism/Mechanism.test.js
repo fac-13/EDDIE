@@ -11,7 +11,7 @@ describe('test Mechanism', () => {
       </MemoryRouter>
     );
     const actual = container.querySelector('h1').textContent;
-    expect(actual).toEqual('Mechanism');
+    expect(actual).toEqual('The mechanism of erection');
   });
 });
 

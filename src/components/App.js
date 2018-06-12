@@ -11,6 +11,11 @@ import Causes from './Causes/Causes';
 import Mechanism from './Mechanism/Mechanism';
 import Myths from './Myths/Myths';
 import Resources from './Resources/Resources';
+import Appetitive from './Mechanism/Appetitive';
+import Aversive from './Mechanism/Aversive';
+import Curiosity from './Steps/Curiosity';
+import Communication from './Steps/Communication';
+import Openness from './Steps/Openness';
 import ErrorPage from './ErrorPage/ErrorPage';
 import { ThemeProvider } from 'styled-components';
 
@@ -62,6 +67,11 @@ const App = () => (
       <Route path="/myths" component={Myths} />
       <Route path="/mechanism" component={Mechanism} />
       <Route path="/resources" component={Resources} />
+      <Route path="/appetitive" component={Appetitive} />
+      <Route path="/aversive" component={Aversive} />
+      <Route path="/communication" component={Communication} />
+      <Route path="/curiosity" component={Curiosity} />
+      <Route path="/openness" component={Openness} />
       <Route component={ErrorPage} />
     </Switch>
   </ThemeProvider>
