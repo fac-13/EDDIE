@@ -114,7 +114,7 @@ const Stories = () => (
   <React.Fragment>
     <Header title="Stories" />
     <main className="stories">
-      <Carousel slides={SlidesData} />
+      <Carousel type="stories" slides={SlidesData} />
       <p className="stories__instructions">
         Click each item to learn why and how Peter coped with ED
       </p>

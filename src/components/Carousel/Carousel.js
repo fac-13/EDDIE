@@ -10,6 +10,7 @@ import styled from 'styled-components';
 
 import Dots from './Dots';
 import Story from './Story';
+import Cause from './Cause';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -72,7 +73,7 @@ const StyledSlider = styled(Slider)`
   }
 `;
 
-const Carousel = ({ slides }) => (
+const Carousel = ({ type, slides }) => (
   <StyledCarouselProvider
     naturalSlideWidth={360}
     naturalSlideHeight={430}
@@ -81,9 +82,14 @@ const Carousel = ({ slides }) => (
     <Row>
       <StyledButtonBack>&lt;</StyledButtonBack>
       <StyledSlider>
-        {slides.map((slide, index) => (
-          <Story slide={slide} key={index} index={index} />
-        ))}
+        {slides.map(
+          (slide, index) =>
+            type === 'stories' ? (
+              <Story slide={slide} key={`key-${index}`} index={index} />
+            ) : (
+              <Cause slide={slide} key={`key-${index}`} index={index} />
+            )
+        )}
       </StyledSlider>
       <StyledButtonNext>&gt;</StyledButtonNext>
     </Row>
@@ -92,6 +98,7 @@ const Carousel = ({ slides }) => (
 );
 
 Carousel.propTypes = {
+  type: propTypes.string,
   slides: propTypes.array
 };
 
