@@ -3,6 +3,8 @@ import { Dot, WithStore } from 'pure-react-carousel';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
 
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 const Div = styled.div`
   ${props => props.theme.flexContainer('row', 'space-around', 'center')};
 

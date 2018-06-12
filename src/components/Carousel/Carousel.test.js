@@ -47,12 +47,10 @@ const SlidesData = [
   }
 ];
 
-const flexContainer = () => {};
-
 describe('test Carousel', () => {
   test('displays correct title', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer }}>
+      <ThemeProvider theme={{ flexContainer: () => {} }}>
         <Carousel slides={SlidesData} />
       </ThemeProvider>
     );
@@ -62,7 +60,7 @@ describe('test Carousel', () => {
 
   test('displays correct about', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer }}>
+      <ThemeProvider theme={{ flexContainer: () => {} }}>
         <Carousel slides={SlidesData} />
       </ThemeProvider>
     );

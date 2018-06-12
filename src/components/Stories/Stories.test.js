@@ -5,13 +5,11 @@ import { ThemeProvider } from 'styled-components';
 
 import Stories from './Stories';
 
-const flexContainer = () => {};
-
 describe('test Stories', () => {
   test('displays Header', () => {
     const { container } = render(
       <MemoryRouter initialEntries={['/stories']}>
-        <ThemeProvider theme={{ flexContainer }}>
+        <ThemeProvider theme={{ flexContainer: () => {} }}>
           <Stories />
         </ThemeProvider>
       </MemoryRouter>
