@@ -1,6 +1,37 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import './splash.scss';
+
+import styled from 'styled-components';
+
+const SplashScreen = styled.div`
+${props => props.theme.flexContainer('column', 'center', 'center')}
+background-color: ${props => props.theme.blue};
+height: 100vh;
+width: 100vw;
+animation: appear 2s ease-out;
+@keyframes appear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5
+  }
+}
+`
+const Svg = styled.svg`
+animation: burst 2s ease-out;
+
+@keyframes burst {
+  0% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+`
 
 class Splash extends React.Component {
   state = {
@@ -18,8 +49,8 @@ class Splash extends React.Component {
 
     if (!redirect) {
       return (
-        <div className="splash">
-          <svg className="splash__svg"
+        <SplashScreen className="splash">
+          <Svg className="splash__svg"
             width="172"
             height="170"
             viewBox="0 0 172 170"
@@ -304,8 +335,8 @@ class Splash extends React.Component {
               transform="translate(0 22)"
               fill="#1A5F67"
             />
-          </svg>
-        </div >
+          </Svg>
+        </SplashScreen>
       );
     } else {
       return <Redirect to="/home" />;
