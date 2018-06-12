@@ -28,11 +28,11 @@ const CausesCarousel = ({ causes }) => (
             {cause.list.map(item => <li className="cause_item">{item}</li>)}
           </ul>
           <div className="cause__content">{cause.text}</div>
+          <Link to={cause.link} className="causes__button">STEPS YOU CAN TAKE</Link>
         </Slide>
       ))} 
     <DotGroup /> 
     </Slider>
-    <Link to="steps" className="causes__button">STEPS YOU CAN TAKE</Link>
     <ButtonNext>Next</ButtonNext>
   </CarouselProvider>
 );

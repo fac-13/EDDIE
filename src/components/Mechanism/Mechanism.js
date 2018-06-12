@@ -13,7 +13,7 @@ const Mechanism = () => (
         state is achieved when the sympathetic nervous system (SNS) is
         activated.
       </p>
-      <Link to="home" className="home__btn">
+      <Link to="aversive" className="home__btn">
         Read more
       </Link>
     </article>
@@ -25,7 +25,7 @@ const Mechanism = () => (
         partly an automatic reflex when you get into a sexually aroused state.
         When sexually aroused, your body enters a state we call appetitive.
       </p>
-      <Link to="home" className="home__btn">
+      <Link to="appeitive" className="home__btn">
         Read more
       </Link>
     </article>
