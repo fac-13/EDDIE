@@ -11,7 +11,7 @@ describe('test Causes', () => {
       </MemoryRouter>
     );
     const actual = container.querySelector('h1').textContent;
-    expect(actual).toEqual('Causes');
+    expect(actual).toEqual('What causes ED?');
   });
 });
 
