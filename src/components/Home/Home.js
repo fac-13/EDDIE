@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './home.scss';
-
 import styled from 'styled-components';
 import forest from '../../../assets/forest.svg'
 
