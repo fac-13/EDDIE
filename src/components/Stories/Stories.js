@@ -116,7 +116,7 @@ const Stories = () => (
     <main className="stories">
       <Carousel type="stories" slides={SlidesData} />
       <p className="stories__instructions">
-        Click each item to learn why and how Peter coped with ED
+        Click each item to learn how he coped with ED
       </p>
     </main>
   </React.Fragment>

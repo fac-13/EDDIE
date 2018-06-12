@@ -9,8 +9,7 @@ const Div = styled.div`
   ${props => props.theme.flexContainer('row', 'space-around', 'center')};
 
   width: 18%;
-  height: 1rem;
-  margin-top: 20px;
+  height: 15%;
 `;
 
 const StyledDot = styled(Dot)`

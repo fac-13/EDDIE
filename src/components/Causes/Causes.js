@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from '../Header/Header';
-import CausesCarousel from './Cause';
 
-const causes = [
+import Header from '../Header/Header';
+import Carousel from '../Carousel/Carousel';
+
+const slidesData = [
   {
     type: 'PHYSICAL',
     list: [
@@ -14,7 +15,7 @@ const causes = [
     ],
     text:
       'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service',
-    link: 'curiosity'  
+    link: 'curiosity'
   },
   {
     type: 'PSYCHOLOGICAL',
@@ -49,7 +50,7 @@ const causes = [
 const Causes = () => (
   <React.Fragment>
     <Header title="What causes ED?" />
-    <CausesCarousel causes={causes} />
+    <Carousel type="causes" slides={slidesData} />
   </React.Fragment>
 );
 
