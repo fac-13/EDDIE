@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 import {
   CarouselProvider,
   Slider,
@@ -9,7 +9,7 @@ import {
   DotGroup
 } from 'pure-react-carousel';
 import propTypes from 'prop-types';
-// import 'pure-react-carousel/dist/react-carousel.es.css';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const CausesCarousel = ({ causes }) => (
   <CarouselProvider
@@ -29,10 +29,10 @@ const CausesCarousel = ({ causes }) => (
           </ul>
           <div className="cause__content">{cause.text}</div>
         </Slide>
-      ))}
+      ))} 
+    <DotGroup /> 
     </Slider>
-
-    <DotGroup />
+    <Link to="steps" className="causes__button">STEPS YOU CAN TAKE</Link>
     <ButtonNext>Next</ButtonNext>
   </CarouselProvider>
 );
