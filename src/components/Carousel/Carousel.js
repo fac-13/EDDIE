@@ -8,9 +8,9 @@ import {
 import propTypes from 'prop-types';
 import styled from 'styled-components';
 
-import Dots from './Dots';
-import Story from './Story';
-import Cause from './Cause';
+import Dots from '../Dots/Dots';
+import Story from '../Story/Story';
+import Cause from '../Cause/Cause';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 

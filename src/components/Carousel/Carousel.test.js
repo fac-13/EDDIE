@@ -51,7 +51,7 @@ describe('test Carousel', () => {
   test('displays correct title', () => {
     const { container } = render(
       <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <Carousel slides={SlidesData} />
+        <Carousel type="stories" slides={SlidesData} />
       </ThemeProvider>
     );
     const actual = container.querySelector('h2').textContent;
@@ -61,7 +61,7 @@ describe('test Carousel', () => {
   test('displays correct about', () => {
     const { container } = render(
       <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <Carousel slides={SlidesData} />
+        <Carousel type="stories" slides={SlidesData} />
       </ThemeProvider>
     );
     const actual = container.querySelector('h3').textContent;
