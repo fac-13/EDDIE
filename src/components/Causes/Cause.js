@@ -9,7 +9,7 @@ import {
   DotGroup
 } from 'pure-react-carousel';
 import propTypes from 'prop-types';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+// import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const CausesCarousel = ({ causes }) => (
   <CarouselProvider
@@ -33,7 +33,6 @@ const CausesCarousel = ({ causes }) => (
     </Slider>
 
     <DotGroup />
-    <Button link="">STEPS YOU CAN TAKE</Button>
     <ButtonNext>Next</ButtonNext>
   </CarouselProvider>
 );

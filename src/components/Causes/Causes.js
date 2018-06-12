@@ -13,7 +13,8 @@ const causes = [
       'Physical tension/stress'
     ],
     text:
-      'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service'
+      'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service',
+    link: 'curiosity'  
   },
   {
     type: 'PSYCHOLOGICAL',
@@ -28,7 +29,8 @@ const causes = [
       'Numbness (a feeling of disconnection from emotions)'
     ],
     text:
-      'If you do not experience any difficulties with your erection when masturbating but you experience such difficulties when having sex with a partner, then the causes are 100% psychological-relational.'
+      'If you do not experience any difficulties with your erection when masturbating but you experience such difficulties when having sex with a partner, then the causes are 100% psychological-relational.',
+    link: 'openness'
   },
   {
     type: 'RELATIONAL',
@@ -39,7 +41,8 @@ const causes = [
       'Fears of pregnancy or sexually transmitted infections',
       'Unidentified and/or unresolved problems in your relationship'
     ],
-    text: null
+    text: null,
+    link: 'communication'
   }
 ];
 
