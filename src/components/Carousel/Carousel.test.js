@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
+import { ThemeProvider } from 'styled-components';
 
 import Carousel from './Carousel';
 
@@ -46,15 +47,25 @@ const SlidesData = [
   }
 ];
 
+const flexContainer = () => {};
+
 describe('test Carousel', () => {
   test('displays correct title', () => {
-    const { container } = render(<Carousel slides={SlidesData} />);
+    const { container } = render(
+      <ThemeProvider theme={{ flexContainer }}>
+        <Carousel slides={SlidesData} />
+      </ThemeProvider>
+    );
     const actual = container.querySelector('h2').textContent;
     expect(actual).toEqual('Daniel');
   });
 
   test('displays correct about', () => {
-    const { container } = render(<Carousel slides={SlidesData} />);
+    const { container } = render(
+      <ThemeProvider theme={{ flexContainer }}>
+        <Carousel slides={SlidesData} />
+      </ThemeProvider>
+    );
     const actual = container.querySelector('h3').textContent;
     expect(actual).toEqual('Married 25 years, has 1 child');
   });

@@ -26,17 +26,21 @@ const StyledDot = styled(Dot)`
   }
 `;
 
-const Dots = ({ slides, currentSlide }) => (
-  <Div>
-    {slides.map((slide, index) => (
-      <StyledDot
-        selected={currentSlide === index}
-        key={`key-${index}`}
-        slide={index}
-      />
-    ))}
-  </Div>
-);
+class Dots extends React.Component {
+  render() {
+    return (
+      <Div>
+        {this.props.slides.map((slide, index) => (
+          <StyledDot
+            selected={this.props.currentSlide === index}
+            key={`key-${index}`}
+            slide={index}
+          />
+        ))}
+      </Div>
+    );
+  }
+}
 
 Dots.propTypes = {
   slides: propTypes.array,
