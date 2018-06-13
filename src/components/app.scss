@@ -1,6 +1,19 @@
-@import '../_styleguide.scss';
 @import '../_reset.scss';
-@import '../_mixins.scss';
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-container($direction, $justify, $align) {
+  @include flexbox();
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +26,6 @@ body {
   @include flex-container(column, flex-start, center);
   height: 100vh;
   width: 100%;
-  font-family: $body-font;
-  color: $black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  color: #3d4f51;
 }
