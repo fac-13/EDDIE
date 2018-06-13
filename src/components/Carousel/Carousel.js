@@ -23,7 +23,7 @@ const StyledCarouselProvider = styled(CarouselProvider)`
 
 const Row = styled.div`
   ${props => props.theme.flexContainer('row', 'space-between', 'center')};
-  height: 90%;
+  height:  ${props => (props.type === 'causes' ? '50%' : '90%')};
   width: 100%;
 `;
 
@@ -64,6 +64,7 @@ const StyledSlider = styled(Slider)`
   height: 100%;
   width: 100vw;
 
+
   .carousel__slider-tray-wrapper {
     width: 100%;
     height: 100%;
@@ -71,6 +72,8 @@ const StyledSlider = styled(Slider)`
   .carousel__slider-tray {
     width: 100%;
     height: 100%;
+    overflow-y: scroll;
+    margin: 1em;
   }
 `;
 

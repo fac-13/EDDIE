@@ -13,15 +13,14 @@ const StyledSlide = styled(Slide)`
     ${props => props.theme.flexContainer('column', 'flex-start', 'center')};
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 100%;
     padding-bottom: 0px;
   }
 `;
 
 const Div = styled.div`
   ${props => props.theme.flexContainer('column', 'space-around', 'center')};
-  height: 20em;
-  width: 20em;
+  height: 15em;
+  width: 15em;
   ${props =>
     props.type === 'PHYSICAL'
       ? `background-color: ${props.theme.green}`

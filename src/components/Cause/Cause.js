@@ -9,23 +9,27 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 const StyledSlide = styled(Slide)`
   height: 100%;
   padding-bottom: 0px;
+  font-size:1.1em;
 
   .carousel__inner-slide {
-    ${props => props.theme.flexContainer('column', 'flex-start', 'center')};
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    ${'' /* ${props => props.theme.flexContainer('column', 'flex-start', 'center')}; */}
+    ${'' /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); */}
     width: 100%;
-    height: 100%;
     padding-bottom: 0px;
   }
 `;
 
 const List = styled.ul`
   ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+  list-style: initial;
+  line-height: 1.2em;
+  margin: 1em auto 1em auto;
 `;
 
 const ListItem = styled.li`
   width: 80%;
-  line-height: 2em;
+  list-style: initial;
+  margin: 1em auto 1em auto;
 `;
 
 const StyledLink = styled(Link)`
@@ -35,7 +39,8 @@ const StyledLink = styled(Link)`
   color: ${props => props.theme.white};
   text-align: center;
   height: 3em;
-  width: 30%;
+  width: 50%;
+  margin: 1em auto;
   box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
   text-decoration: none;
   text-transform: uppercase;
@@ -49,6 +54,15 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const Warning = styled.div `
+    margin: 2em;
+    padding: 1em;
+    line-height: 1.5em;
+    border: .5em red dotted;
+    font-weight: 700;
+    position: relative;
+`
+
 const Cause = ({ cause }) => {
   return (
     <StyledSlide>
@@ -57,7 +71,7 @@ const Cause = ({ cause }) => {
           <ListItem key={`key-${index}`}>{item}</ListItem>
         ))}
       </List>
-      <div>{cause.text}</div>
+      <Warning>{cause.text}</Warning>
       <StyledLink to={cause.link}>
         STEPS YOU<br />CAN TAKE
       </StyledLink>
