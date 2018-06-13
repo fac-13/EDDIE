@@ -16,10 +16,10 @@ width: 6%;
 `
 
 const Title = styled.h1`
-${props => props.theme.flexContainer('row', 'flex-start', 'center')}
+${props => props.theme.flexContainer('row', 'flex-start', 'center')};
   height: 40%;
   width: 80%;
-  font-family: ${props => props.theme.bodyFont}
+  font-family: ${props => props.theme.bodyFont};
   font-size: 1.3rem;
 `
 const Header = ({ title, history }) => {
