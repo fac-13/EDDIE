@@ -6,7 +6,7 @@ node_js:
   - "node"
 notifications:
   - email: false
-nstall:
+install:
   - npm install
   - npm install -g codecov
 script:
