@@ -21,11 +21,7 @@ const StyledCarouselProvider = styled(CarouselProvider) `
 
 const Row = styled.div`
   ${props => props.theme.flexContainer('row', 'space-between', 'center')};
-<<<<<<< HEAD
   height: 100%;
-=======
-  height:  ${props => (props.type === 'causes' ? '50%' : '100%')};
->>>>>>> master
   width: 100%;
 `;
 
@@ -92,6 +88,7 @@ const Carousel = ({ type, slides }) => (
           return type === 'stories' ? (
             <Story story={slide} key={`key-${index}`} index={index} />
           ) : (
+
               <Cause cause={slide} key={`key-${index}`} index={index} />
             );
         })}
