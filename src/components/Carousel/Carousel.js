@@ -82,7 +82,7 @@ const StyledSlider = styled(Slider) `
   .carousel__slider-tray {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: ${props => props.type === 'stories' ? 'hidden' : 'scroll'};
   }
 `;
 
