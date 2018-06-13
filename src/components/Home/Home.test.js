@@ -1,19 +1,20 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 import { MemoryRouter } from 'react-router-dom';
-import Home from './Home';
 import { ThemeProvider } from 'styled-components';
+
+import Home from './Home';
 
 describe('test Home', () => {
   test('displays Header', () => {
     const { container } = render(
       <MemoryRouter initialEntries={['/home']}>
-        <ThemeProvider theme={{ flexContainer: () => { } }}>
+        <ThemeProvider theme={{ flexContainer: () => {} }}>
           <Home />
         </ThemeProvider>
       </MemoryRouter>
     );
-    const actual = container.querySelectorAll('p')[0].textContent.includes('sexually');
-    expect(actual).toBeTruthy();
+    const actual = container.querySelector('h1').textContent;
+    expect(actual).toBe('Eddie');
   });
 });
