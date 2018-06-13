@@ -105,6 +105,7 @@ class Story extends React.Component {
   render() {
     const { story } = this.props;
     const { openSymptom } = this.state;
+
     return (
       <StyledSlide>
         <Header>

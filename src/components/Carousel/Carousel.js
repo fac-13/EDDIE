@@ -74,7 +74,6 @@ const StyledSlider = styled(Slider) `
   height: 100%;
   width: 100vw;
 
-
   .carousel__slider-tray-wrapper {
     width: 100%;
     height: 100%;
