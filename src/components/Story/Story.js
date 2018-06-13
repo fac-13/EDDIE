@@ -78,7 +78,7 @@ const Text = styled.p`
 const Man = styled.svg`
   position: absolute;
   height: 60%;
-  right: 0%;
+  right: 4%;
   z-index: 0;
 `;
 
