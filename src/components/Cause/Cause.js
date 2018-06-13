@@ -24,6 +24,7 @@ const Div = styled.div`
   width: 100%;
   color: ${props => props.theme.white}
   font-weight: 300;
+  opacity: 0.9;
   ${props =>
     props.type === 'PHYSICAL CAUSES'
       ? `background-color: ${props.theme.lightGreen}`
@@ -84,6 +85,7 @@ const Warning = styled.div`
     border: .2em red dotted;
     font-weight: 500;
     max-width: 900px;
+    width: 80%;
     margin: 1em auto;
 `
 
