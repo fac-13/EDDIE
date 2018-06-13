@@ -17,7 +17,7 @@ const Main = styled.main`
   animation: appear 0.8s ease-in-out;
   @keyframes appear {
     0% {
-      background-color: $blue;
+      background-color: ${props => props.theme.blue};
       opacity: 0.1;
     }
     50% {
