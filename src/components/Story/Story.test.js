@@ -1,8 +1,9 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render, Simulate } from 'react-testing-library';
 import { ThemeProvider } from 'styled-components';
 
 import Story from './Story';
+import { CarouselProvider } from 'pure-react-carousel';
 
 const story = {
   name: 'Daniel',
@@ -33,10 +34,56 @@ describe('test Story', () => {
   test('displays title of Story', () => {
     const { container } = render(
       <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <Story story={story} />
+        <CarouselProvider>
+          <Story story={story} />
+        </CarouselProvider>
       </ThemeProvider>
     );
     const actual = container.querySelector('h2').textContent;
     expect(actual).toEqual('Daniel');
+  });
+
+  test('displays symptom of Story', () => {
+    const { container } = render(
+      <ThemeProvider theme={{ flexContainer: () => {} }}>
+        <CarouselProvider>
+          <Story story={story} />
+        </CarouselProvider>
+      </ThemeProvider>
+    );
+    const actual = container.querySelector('p').textContent;
+    expect(actual).toEqual('Smoker. Diabetic');
+  });
+
+  test('displays intervention of first symptom', () => {
+    const { container } = render(
+      <ThemeProvider theme={{ flexContainer: () => {} }}>
+        <CarouselProvider>
+          <Story story={story} />
+        </CarouselProvider>
+      </ThemeProvider>
+    );
+    const symptom = container.querySelector('div[type]');
+    Simulate.click(symptom);
+
+    const actual = container.querySelector('p').textContent;
+    expect(actual).toMatch(/erection/);
+  });
+
+  test('closes intervention of first symptom', () => {
+    const { container } = render(
+      <ThemeProvider theme={{ flexContainer: () => {} }}>
+        <CarouselProvider>
+          <Story story={story} />
+        </CarouselProvider>
+      </ThemeProvider>
+    );
+    const symptom = container.querySelector('div[type]');
+    Simulate.click(symptom);
+    const intervention = container.querySelector('div[type]');
+    Simulate.click(intervention);
+
+    const actual = container.querySelector('p').textContent;
+    expect(actual).toEqual('Smoker. Diabetic');
   });
 });

@@ -7,11 +7,11 @@ import { ThemeProvider } from 'styled-components';
 describe('test Splash', () => {
   test('displays heading', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer: () => { } }}>
+      <ThemeProvider theme={{ flexContainer: () => {} }}>
         <Splash />
       </ThemeProvider>
     );
     const actual = container.querySelector('svg');
-    expect(actual).toBeTruthy()
+    expect(actual).toBeTruthy();
   });
 });
