@@ -119,6 +119,7 @@ const Instructions = styled.p`
 width: 80%;
 text-align: center;
 height: 8%;
+margin: 5px;
 `
 
 const Stories = () => (

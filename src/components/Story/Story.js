@@ -5,16 +5,10 @@ import styled from 'styled-components';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-const StyledSlide = styled(Slide)`
-  height: 100%;
-  padding-bottom: 0px;
-
+const StyledSlide = styled(Slide) `
   .carousel__inner-slide {
-    ${props => props.theme.flexContainer('column', 'space-around', 'center')};
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-    padding-bottom: 0px;
+    height: 100vh; !important
+    ${props => props.theme.flexContainer('column', 'center', 'center')};
   }
 `;
 
@@ -30,20 +24,17 @@ const Name = styled.h2`
 
 const About = styled.h3`
   font-family: ${props => props.theme.headerFont};
-  font-weight: bold;
   font-size: 1.1rem;
 `;
 
 const Main = styled.div`
-  ${props => props.theme.flexContainer('row', 'center', 'center')};
-  position: relative;
-  height: 80%;
+  height: 90%;
   width: 90%;
 `;
 
 const Content = styled.div`
   ${props => props.theme.flexContainer('column', 'space-around', 'flex-start')};
-  height: 100%;
+  height: 75%;
   width: 100%;
 `;
 
@@ -71,17 +62,18 @@ const Symptom = styled.div`
 `;
 
 const Intervention = Symptom.extend`
-  height: 87%;
+  height: 85%;
+  overflow-y: scroll;
 `;
 
 const Text = styled.p`
   width: 90%;
-  font-weight: 500;
+  font-weight: 300;
 `;
 
 const Man = styled.svg`
   position: absolute;
-  height: 100%;
+  height: 60%;
   right: 0%;
   z-index: 0;
 `;
@@ -130,13 +122,13 @@ class Story extends React.Component {
                 );
               })
             ) : (
-              <Intervention
-                type={story.symptoms[openSymptom].type}
-                onClick={() => this.toggleIntervention(openSymptom)}
-              >
-                <Text>{story.symptoms[openSymptom].intervention}</Text>
-              </Intervention>
-            )}
+                <Intervention
+                  type={story.symptoms[openSymptom].type}
+                  onClick={() => this.toggleIntervention(openSymptom)}
+                >
+                  <Text>{story.symptoms[openSymptom].intervention}</Text>
+                </Intervention>
+              )}
             <Man viewBox="0 0 120 280" xmlns="http://www.w3.org/2000/svg">
               <Path
                 name={story.name}

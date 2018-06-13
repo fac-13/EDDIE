@@ -15,7 +15,7 @@ import Box from '../Cause/Box';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-const StyledCarouselProvider = styled(CarouselProvider)`
+const StyledCarouselProvider = styled(CarouselProvider) `
   ${props => props.theme.flexContainer('column', 'space-between', 'center')};
   width: 100%;
   height: 90%};
@@ -23,11 +23,11 @@ const StyledCarouselProvider = styled(CarouselProvider)`
 
 const Row = styled.div`
   ${props => props.theme.flexContainer('row', 'space-between', 'center')};
-  height: 90%;
+  height: 100%;
   width: 100%;
 `;
 
-const StyledButtonBack = styled(ButtonBack)`
+const StyledButtonBack = styled(ButtonBack) `
   background-color: transparent;
   color: ${props => props.theme.black};
   width: 10%;
@@ -43,7 +43,7 @@ const StyledButtonBack = styled(ButtonBack)`
   }
 `;
 
-const StyledButtonNext = styled(ButtonNext)`
+const StyledButtonNext = styled(ButtonNext) `
   background-color: transparent;
   color: ${props => props.theme.black};
   width: 10%;
@@ -59,7 +59,7 @@ const StyledButtonNext = styled(ButtonNext)`
   }
 `;
 
-const StyledSlider = styled(Slider)`
+const StyledSlider = styled(Slider) `
   ${props => props.theme.flexContainer('column', 'space-between', 'center')};
   height: 100%;
   width: 100vw;
@@ -87,8 +87,8 @@ const Carousel = ({ type, slides }) => (
           return type === 'stories' ? (
             <Story story={slide} key={`key-${index}`} index={index} />
           ) : (
-            <Box cause={slide} key={`key-${index}`} index={index} />
-          );
+              <Box cause={slide} key={`key-${index}`} index={index} />
+            );
         })}
       </StyledSlider>
       <StyledButtonNext type={type}>&gt;</StyledButtonNext>

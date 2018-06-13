@@ -50,9 +50,9 @@ const App = () => (
       black: '#3d4f51',
       blue: '#b8f7f1',
       darkBlue: '#1a5f67',
-      green: '#94d75b',
-      coral: '#fd8489',
-      slate: '#7ca5a9',
+      green: '#24815B',
+      coral: '#D73C36',
+      slate: '#517B7B',
       bodyFont: fontStack,
       headerFont: ['Lato', ...fontStack],
       flexContainer

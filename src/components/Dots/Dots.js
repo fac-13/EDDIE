@@ -7,14 +7,14 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Div = styled.div`
   ${props => props.theme.flexContainer('row', 'space-around', 'center')};
-
-  width: 18%;
-  height: 15%;
+  height: 1rem;
+  margin: 5px;
 `;
 
-const StyledDot = styled(Dot)`
+const StyledDot = styled(Dot) `
   height: 12px;
   width: 12px;
+  margin: 3px;
   border-radius: 50%;
   background-color: ${props => props.theme.black};
   cursor: pointer;
@@ -31,7 +31,7 @@ class Dots extends React.Component {
   render() {
     return (
       <Div>
-        {this.props.slides.map((slide, index) => (
+        {this.props.slides.map((_, index) => (
           <StyledDot
             selected={this.props.currentSlide === index}
             key={`key-${index}`}
