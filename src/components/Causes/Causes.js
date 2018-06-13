@@ -16,7 +16,7 @@ const slidesData = [
     text:
       'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service',
     link: 'curiosity',
-    svg: <Physical/>
+    svg: <Physical />
   },
   {
     type: 'PSYCHOLOGICAL',

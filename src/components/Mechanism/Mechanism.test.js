@@ -4,21 +4,11 @@ import { MemoryRouter } from 'react-router-dom';
 import Mechanism from './Mechanism';
 import { ThemeProvider } from 'styled-components';
 
-const flexContainer = (direction, justify, align) => `
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: ${direction};
-  justify-content: ${justify};
-  align-items: ${align};
-  `;
 describe('test Mechanism', () => {
   test('displays title of mechanism', () => {
     const { container } = render(
       <MemoryRouter initialEntries={['/mechanism']}>
-        <ThemeProvider theme={{ flexContainer }}>
+        <ThemeProvider theme={{ flexContainer: () => { } }}>
           <Mechanism />
         </ThemeProvider>
       </MemoryRouter>

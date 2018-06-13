@@ -4,22 +4,11 @@ import { MemoryRouter } from 'react-router-dom';
 import Resources from './Resources';
 import { ThemeProvider } from 'styled-components';
 
-const flexContainer = (direction, justify, align) => `
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: ${direction};
-  justify-content: ${justify};
-  align-items: ${align};
-  `;
-
 describe('test Resources', () => {
   test('checks Resources contain a string', () => {
     const { container } = render(
       <MemoryRouter initialEntries={['/resources']}>
-        <ThemeProvider theme={{ flexContainer }}>
+        <ThemeProvider theme={{ flexContainer: () => { } }}>
           <Resources />
         </ThemeProvider>
       </MemoryRouter>
