@@ -7,11 +7,9 @@ import {
 } from 'pure-react-carousel';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
-
 import Dots from '../Dots/Dots';
 import Story from '../Story/Story';
 import Cause from '../Cause/Cause';
-import Box from '../Cause/Box';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -23,20 +21,21 @@ const StyledCarouselProvider = styled(CarouselProvider)`
 
 const Row = styled.div`
   ${props => props.theme.flexContainer('row', 'space-between', 'center')};
-  height:  ${props => (props.type === 'causes' ? '50%' : '90%')};
+  height:  ${props => (props.type === 'causes' ? '50%' : '100%')};
   width: 100%;
 `;
 
 const StyledButtonBack = styled(ButtonBack)`
   background-color: transparent;
   color: ${props => props.theme.black};
-  width: 10%;
-  height: ${props => (props.type === 'causes' ? '50%' : '70%')};
+  width: 5%;
+  height: ${props => (props.type === 'causes' ? '80%' : '70%')};
   border: none;
   outline: none;
   position: absolute;
   left: 0;
   z-index: 1;
+  font-size: 1.5em;
 
   &:hover {
     font-weight: bold;
@@ -46,14 +45,14 @@ const StyledButtonBack = styled(ButtonBack)`
 const StyledButtonNext = styled(ButtonNext)`
   background-color: transparent;
   color: ${props => props.theme.black};
-  width: 10%;
-  height: ${props => (props.type === 'causes' ? '40%' : '70%')};
+  width: 5%;
+  height: ${props => (props.type === 'causes' ? '80%' : '70%')};
   border: none;
   outline: none;
   position: absolute;
   right: 0;
   z-index: 1;
-
+  font-size: 1.5em;
   &:hover {
     font-weight: bold;
   }
@@ -73,7 +72,6 @@ const StyledSlider = styled(Slider)`
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    margin: 1em;
   }
 `;
 
@@ -90,20 +88,13 @@ const Carousel = ({ type, slides }) => (
           return type === 'stories' ? (
             <Story story={slide} key={`key-${index}`} index={index} />
           ) : (
-            <Box cause={slide} key={`key-${index}`} index={index} />
+            <Cause cause={slide} key={`key-${index}`} index={index} />
           );
         })}
       </StyledSlider>
       <StyledButtonNext type={type}>&gt;</StyledButtonNext>
     </Row>
     <Dots slides={slides} />
-    {type === 'causes' ? (
-      <StyledSlider>
-        {slides.map((slide, index) => (
-          <Cause cause={slide} key={`key-${index}`} index={index} />
-        ))}
-      </StyledSlider>
-    ) : null}
   </StyledCarouselProvider>
 );
 

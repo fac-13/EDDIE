@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Relational, Physical, Psychological } from '../Assets/Assets';
 import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
 
@@ -15,7 +15,8 @@ const slidesData = [
     ],
     text:
       'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service',
-    link: 'curiosity'
+    link: 'curiosity',
+    svg: <Physical/>
   },
   {
     type: 'PSYCHOLOGICAL',
@@ -31,7 +32,8 @@ const slidesData = [
     ],
     text:
       'If you do not experience any difficulties with your erection when masturbating but you experience such difficulties when having sex with a partner, then the causes are 100% psychological-relational.',
-    link: 'openness'
+    link: 'openness',
+    svg: <Psychological />
   },
   {
     type: 'RELATIONAL',
@@ -43,7 +45,8 @@ const slidesData = [
       'Unidentified and/or unresolved problems in your relationship'
     ],
     text: null,
-    link: 'communication'
+    link: 'communication',
+    svg: <Relational />
   }
 ];
 
