@@ -114,6 +114,9 @@ const Main = styled.main`
 ${params => params.theme.flexContainer('column', 'space-around', 'center')}
 height: 90%;
 width: 100%;
+@media (min-width: 700px){
+  max-width: 700px;
+}
 `
 const Instructions = styled.p`
 width: 80%;
