@@ -19,7 +19,8 @@ npm i
 - React
 - React Router
 - Pure React Carousel
-- ~~Sass~~ Styled Components
+- Sass
+- Styled Components
 - Jest
 - Travis
 - Babel
