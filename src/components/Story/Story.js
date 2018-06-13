@@ -7,7 +7,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const StyledSlide = styled(Slide)`
   height: 100%;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 
   .carousel__inner-slide {
     ${props => props.theme.flexContainer('column', 'space-around', 'center')};
@@ -17,6 +17,7 @@ const StyledSlide = styled(Slide)`
     padding-bottom: 0px;
   }
 `;
+
 
 const Header = styled.header`
   ${props => props.theme.flexContainer('column', 'center', 'center')};

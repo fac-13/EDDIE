@@ -20,8 +20,8 @@ const StyledSlide = styled(Slide)`
 
 const Div = styled.div`
   ${props => props.theme.flexContainer('column', 'center', 'center')};
-  height: 10em;
-  width: 10em;
+  height: 8rem;
+  width: 8rem;
   margin: auto;
   ${props =>
     props.type === 'PHYSICAL'
@@ -36,6 +36,11 @@ const Div = styled.div`
       ? `background-color: ${props.theme.slate}`
       : null};
 `;
+
+const Logo = styled.svg`
+    height:5rem;
+    width:5rem;
+`
 
 const List = styled.ul`
   ${props => props.theme.flexContainer('column', 'space-around', 'center')};
@@ -90,7 +95,7 @@ const Cause = ({ cause }) => {
     <StyledSlide>
       <Div type={cause.type}>
         <h2>{cause.type}</h2>
-        <p>{cause.svg}</p>
+        <Logo>{cause.svg}</Logo> 
       </Div>
       <List>
         {cause.list.map((item, index) => (
