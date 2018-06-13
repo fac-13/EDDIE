@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
 
 import './app.scss';
 
@@ -11,13 +12,12 @@ import Causes from './Causes/Causes';
 import Mechanism from './Mechanism/Mechanism';
 import Myths from './Myths/Myths';
 import Resources from './Resources/Resources';
-import Appetitive from './Mechanism/Appetitive';
-import Aversive from './Mechanism/Aversive';
-import Curiosity from './Steps/Curiosity';
-import Communication from './Steps/Communication';
-import Openness from './Steps/Openness';
+import Appetitive from './Appetitive/Appetitive';
+import Aversive from './Aversive/Aversive';
+import Curiosity from './Curiosity/Curiosity';
+import Communication from './Communication/Communication';
+import Openness from './Openness/Openness';
 import ErrorPage from './ErrorPage/ErrorPage';
-import { ThemeProvider } from 'styled-components';
 
 const fontStack = [
   '-apple-system',

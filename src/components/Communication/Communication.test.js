@@ -3,18 +3,18 @@ import { render } from 'react-testing-library';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import Home from './Home';
+import Communication from './Communication';
 
-describe('test Home', () => {
-  test('displays Header', () => {
+describe('test Mechanism', () => {
+  test('displays title of Communication', () => {
     const { container } = render(
-      <MemoryRouter initialEntries={['/home']}>
+      <MemoryRouter initialEntries={['/communication']}>
         <ThemeProvider theme={{ flexContainer: () => {} }}>
-          <Home />
+          <Communication />
         </ThemeProvider>
       </MemoryRouter>
     );
     const actual = container.querySelector('h1').textContent;
-    expect(actual).toBe('Eddie');
+    expect(actual).toEqual('Cultivate communication');
   });
 });

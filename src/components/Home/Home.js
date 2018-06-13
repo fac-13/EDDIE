@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
-import forest from '../../../assets/forest.svg'
+import forest from '../../../assets/forest.svg';
 
 const Main = styled.main`
   ${props => props.theme.flexContainer('column', 'space-around', 'center')};
@@ -30,58 +30,61 @@ const Main = styled.main`
 `;
 
 const Header = styled.header`
-${props => props.theme.flexContainer('column', 'center', 'center')};
-`
+  ${props => props.theme.flexContainer('column', 'center', 'center')};
+`;
+const Title = styled.h1`
+  font-family: ${props => props.theme.headerFont};
+  font-weight: 300;
+  color: ${props => props.theme.darkBlue};
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+`;
 const Subtitle = styled.h2`
-font-family: ${props => props.theme.headerFont};
-font-weight: 300;
-color: ${props => props.theme.darkBlue};
-`
-const Title = Subtitle.extend`
-font-size: 1.5rem;
-margin-bottom: 1rem;
-text-transform: uppercase;
-`
+  font-family: ${props => props.theme.headerFont};
+  font-weight: 300;
+  color: ${props => props.theme.darkBlue};
+`;
 
 const Blurb = styled.div`
-${props => props.theme.flexContainer('column', 'space-around', 'center')};
-height: 10rem;
-width: 80%;
-max-width: 600px;
-background-color: ${props => props.theme.darkBlue};
-border-radius: 10px;
-opacity: 0.8;
-box-sizing: border-box;
-text-align: center;
-`
+  ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+  height: 10rem;
+  width: 80%;
+  max-width: 600px;
+  background-color: ${props => props.theme.darkBlue};
+  border-radius: 10px;
+  opacity: 0.8;
+  box-sizing: border-box;
+  text-align: center;
+`;
 
 const Buttons = styled.div`
-${props => props.theme.flexContainer('row', 'space-between', 'center')};
-width: 80%;
-max-width: 600px;
-`
+  ${props => props.theme.flexContainer('row', 'space-between', 'center')};
+  width: 80%;
+  max-width: 600px;
+`;
 
-const Button = styled(Link) `
-${props => props.theme.flexContainer('row', 'center', 'center')};
-background-color: ${props => props.theme.darkBlue};
-border-radius: 5px;
-color: ${props => props.theme.white};
-height: 30px;
-min-width: 30%;
-box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
-text-decoration: none;
-font-size: 0.8rem;
-padding: 2px;
-text-transform: uppercase;
+const Button = styled(Link)`
+  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  background-color: ${props => props.theme.darkBlue};
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  height: 30px;
+  min-width: 30%;
+  box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 2px;
+  text-transform: uppercase;
   &: focus {
-  cursor: pointer;
-  box - shadow: 0 0 10px ${props => props.theme.white};
-}
+    cursor: pointer;
+    box- shadow: 0 0 10px ${props => props.theme.white};
+  }
   &: active {
-  outline: none;
-  box - shadow: 0 0 10px ${props => props.theme.white};
-}
-`
+    outline: none;
+    box- shadow: 0 0 10px ${props => props.theme.white};
+  }
+`;
 
 const Home = () => (
   <React.Fragment>
@@ -100,15 +103,9 @@ const Home = () => (
         </p>
       </Blurb>
       <Buttons>
-        <Button to="stories">
-          Stories
-        </Button>
-        <Button to="theory">
-          Theory
-        </Button>
-        <Button to="resources">
-          Resources
-        </Button>
+        <Button to="stories">Stories</Button>
+        <Button to="theory">Theory</Button>
+        <Button to="resources">Resources</Button>
       </Buttons>
     </Main>
   </React.Fragment>

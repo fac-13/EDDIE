@@ -5,8 +5,7 @@ const Openness = () => (
   <React.Fragment>
     <Header title="Cultivate openness" />
     <article>
-      
-    <p>
+      <p>
         We experience emotional reactions (feelings) throughout the day, from
         excitement when meeting a good friend for lunch to irritation when
         getting stuck on the Underground. Feelings are experienced in our bodies
@@ -38,7 +37,6 @@ const Openness = () => (
         mental health professional to discuss any difficulties you experience,
         in person.
       </p>
-
     </article>
   </React.Fragment>
 );
