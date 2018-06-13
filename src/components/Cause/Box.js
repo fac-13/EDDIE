@@ -10,7 +10,7 @@ const StyledSlide = styled(Slide)`
   padding-bottom: 0px;
 
   .carousel__inner-slide {
-    ${props => props.theme.flexContainer('column', 'flex-start', 'center')};
+    ${'' /* ${props => props.theme.flexContainer('column', 'flex-start', 'center')}; */}
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
     padding-bottom: 0px;

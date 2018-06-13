@@ -12,15 +12,13 @@ const StyledSlide = styled(Slide)`
   font-size:1.1em;
 
   .carousel__inner-slide {
-    ${'' /* ${props => props.theme.flexContainer('column', 'flex-start', 'center')}; */}
-    ${'' /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); */}
     width: 100%;
     padding-bottom: 0px;
   }
 `;
 
 const List = styled.ul`
-  ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+  ${'' /* ${props => props.theme.flexContainer('column', 'space-around', 'center')}; */}
   list-style: initial;
   line-height: 1.2em;
   margin: 1em auto 1em auto;
@@ -71,7 +69,7 @@ const Cause = ({ cause }) => {
           <ListItem key={`key-${index}`}>{item}</ListItem>
         ))}
       </List>
-      <Warning>{cause.text}</Warning>
+      {(!cause.text) ? null : <Warning>{cause.text}</Warning> }
       <StyledLink to={cause.link}>
         STEPS YOU<br />CAN TAKE
       </StyledLink>

@@ -42,6 +42,7 @@ const slidesData = [
       'Fears of pregnancy or sexually transmitted infections',
       'Unidentified and/or unresolved problems in your relationship'
     ],
+    text: null,
     link: 'communication'
   }
 ];
