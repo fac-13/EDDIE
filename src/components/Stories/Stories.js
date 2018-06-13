@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
-import './stories.scss';
+import styled from 'styled-components';
 
 // Data for carousel
 const SlidesData = [
@@ -110,15 +110,26 @@ const SlidesData = [
   }
 ];
 
+const Main = styled.main`
+${params => params.theme.flexContainer('column', 'space-around', 'center')}
+height: 90%;
+width: 100%;
+`
+const Instructions = styled.p`
+width: 80%;
+text-align: center;
+height: 8%;
+`
+
 const Stories = () => (
   <React.Fragment>
     <Header title="Stories" />
-    <main className="stories">
+    <Main>
       <Carousel type="stories" slides={SlidesData} />
-      <p className="stories__instructions">
-        Click each item to learn how he coped with ED
-      </p>
-    </main>
+      <Instructions>
+        Click each item to learn why and how Peter coped with ED
+      </Instructions>
+    </Main>
   </React.Fragment>
 );
 

@@ -2,13 +2,31 @@ import React from 'react';
 import propTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-import './header.scss';
+import styled from 'styled-components';
 
+const StyledHeader = styled.header`
+${props => props.theme.flexContainer('row', 'space-around', 'center')}
+width: 100%;
+height: 10%;
+`
+const Back = styled.div`
+${props => props.theme.flexContainer('row', 'center', 'center')}
+height: 40%;
+width: 6%;
+`
+
+const Title = styled.h1`
+${props => props.theme.flexContainer('row', 'flex-start', 'center')}
+  height: 40%;
+  width: 80%;
+  font-family: ${props => props.theme.bodyFont}
+  font-size: 1.3rem;
+`
 const Header = ({ title, history }) => {
   return (
     <React.Fragment>
-      <header className="header">
-        <div className="header__back" onClick={history.goBack}>
+      <StyledHeader>
+        <Back onClick={history.goBack}>
           <svg
             width="16"
             height="16"
@@ -23,9 +41,9 @@ const Header = ({ title, history }) => {
               fill="#3D4F51"
             />
           </svg>
-        </div>
-        <h1 className="header__title">{title}</h1>
-      </header>
+        </Back>
+        <Title>{title}</Title>
+      </StyledHeader>
     </React.Fragment>
   );
 };
