@@ -5,6 +5,7 @@ node_js:
 notifications:
   - email: false
 install:
+  - npm install
   - npm install -g codecov
 script:
   - npm run test:coverage
