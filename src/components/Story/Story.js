@@ -6,11 +6,15 @@ import styled from 'styled-components';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const StyledSlide = styled(Slide) `
+  height: 100%;
+  padding-bottom: 0;
+
   .carousel__inner-slide {
     height: 100vh; !important
     ${props => props.theme.flexContainer('column', 'center', 'center')};
   }
 `;
+
 
 const Header = styled.header`
   ${props => props.theme.flexContainer('column', 'center', 'center')};
