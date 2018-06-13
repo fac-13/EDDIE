@@ -4,3 +4,11 @@ node_js:
   - "node"
 notifications:
   - email: false
+install:
+  - npm install -g codecov
+script:
+  - "jest": {
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
+}
+  - codecov
