@@ -6,9 +6,7 @@ import styled from 'styled-components';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Div = styled.div`
-  ${props => props.theme.flexContainer('row', 'space-around', 'center')};
-  height: 1rem;
-  margin: 5px;
+margin: 10px;
 `;
 
 const StyledDot = styled(Dot) `
