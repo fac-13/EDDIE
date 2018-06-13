@@ -51,8 +51,11 @@ const App = () => (
       blue: '#b8f7f1',
       darkBlue: '#1a5f67',
       green: '#24815B',
+      lightGreen: '#71BE63',
       coral: '#D73C36',
+      lightCoral: '#FD8489',
       slate: '#517B7B',
+      lightSlate: '#7CA5A9',
       bodyFont: fontStack,
       headerFont: ['Lato', ...fontStack],
       flexContainer
