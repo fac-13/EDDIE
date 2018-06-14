@@ -1,7 +1,13 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
-const Relational = () => (
-  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Relational = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 100 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z"
       fill="#FC9CA0"
@@ -35,8 +41,13 @@ const Relational = () => (
   </svg>
 );
 
-const Physical = () => (
-  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Physical = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 100 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z"
       fill="#9ADA65"
@@ -65,8 +76,13 @@ const Physical = () => (
   </svg>
 );
 
-const Psychological = () => (
-  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+const Psychological = ({ className }) => (
+  <svg
+    className={className}
+    viewBox="0 0 100 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100Z"
       fill="#95B7BA"
@@ -165,84 +181,14 @@ const Psychological = () => (
   </svg>
 );
 
-const Happy = () => (
-  <svg viewBox="0 0 50 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M0 2.96512C0 1.32753 1.32753 0 2.96512 0H47.0349C48.6725 0 50 1.32753 50 2.96512C50 4.6027 48.6725 5.93023 47.0349 5.93023H2.96512C1.32753 5.93023 0 4.6027 0 2.96512Z"
-      transform="translate(0 79.0698)"
-      fill="#CE9C79"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M20 0C31.0457 0 40 8.85018 40 19.7674V73.1395H0V19.7674C0 8.85018 8.9543 0 20 0V0Z"
-      transform="translate(5 5.93018)"
-      fill="#EDBB99"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7V12.7674C14 16.6334 10.866 19.7674 7 19.7674C3.13401 19.7674 0 16.6334 0 12.7674V7Z"
-      transform="translate(18)"
-      fill="#EDBB99"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M22 0C22 6.00449 17.0751 10.8721 11 10.8721C4.92487 10.8721 0 6.00449 0 0H22Z"
-      transform="translate(14 44.4766)"
-      fill="#444444"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M30.9912 6.22009L26.8412 10.5146C26.6262 10.7415 26.3257 10.8703 26.0112 10.8703C25.6967 10.8703 25.3962 10.7415 25.1812 10.5146L21.0312 6.22009C19.6563 4.77107 19.6563 2.51574 21.0312 1.06672C21.6763 0.386162 22.5777 0 23.5212 0C24.4647 0 25.3661 0.386162 26.0112 1.06672C26.6563 0.386162 27.5577 0 28.5012 0C29.4447 0 30.3461 0.386162 30.9912 1.06672C32.3661 2.51574 32.3661 4.77107 30.9912 6.22009ZM6.8412 10.5146C6.62623 10.7415 6.32574 10.8703 6.0112 10.8703C5.69666 10.8703 5.39618 10.7415 5.1812 10.5146L1.0312 6.22009C-0.343734 4.77107 -0.343734 2.51574 1.0312 1.06672C1.67628 0.386162 2.57768 0 3.5212 0C4.46473 0 5.36613 0.386162 6.0112 1.06672C6.65628 0.386162 7.55768 0 8.5012 0C9.44473 0 10.3461 0.386162 10.9912 1.06672C12.3661 2.51574 12.3661 4.77107 10.9912 6.22009L6.8412 10.5146Z"
-      transform="translate(8.98383 27.6587)"
-      fill="#E86C5F"
-    />
-  </svg>
-);
+Relational.propTypes = {
+  className: propTypes.string
+};
+Physical.propTypes = {
+  className: propTypes.string
+};
+Psychological.propTypes = {
+  className: propTypes.string
+};
 
-const Sad = () => (
-  <svg viewBox="0 0 50 85" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M0 2.96512C0 1.32753 1.32753 0 2.96512 0H47.0349C48.6725 0 50 1.32753 50 2.96512C50 4.6027 48.6725 5.93023 47.0349 5.93023H2.96512C1.32753 5.93023 0 4.6027 0 2.96512Z"
-      transform="translate(0 79.0698)"
-      fill="#CE9C79"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M20 0C31.0457 0 40 8.85018 40 19.7674V73.1395H0V19.7674C0 8.85018 8.9543 0 20 0V0Z"
-      transform="translate(5 5.93018)"
-      fill="#EDBB99"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7V12.7674C14 16.6334 10.866 19.7674 7 19.7674C3.13401 19.7674 0 16.6334 0 12.7674V7Z"
-      transform="translate(18)"
-      fill="#EDBB99"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M22 10.8721C22 4.8676 17.0751 0 11 0C4.92487 0 0 4.8676 0 10.8721H22Z"
-      transform="translate(14 43.4883)"
-      fill="#444444"
-    />
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M18.5 0C20.433 0 22 1.54878 22 3.4593C22 5.36982 20.433 6.9186 18.5 6.9186C16.567 6.9186 15 5.36982 15 3.4593C15 2.54184 15.3687 1.66195 16.0251 1.01321C16.6815 0.364461 17.5717 0 18.5 0ZM3.5 0C5.433 0 7 1.54878 7 3.4593C7 5.36982 5.433 6.9186 3.5 6.9186C1.567 6.9186 0 5.36982 0 3.4593C0 1.54878 1.567 0 3.5 0Z"
-      transform="translate(14 32.6162)"
-      fill="#444444"
-    />
-  </svg>
-);
-
-export { Relational, Physical, Psychological, Happy, Sad };
+export { Relational, Physical, Psychological };

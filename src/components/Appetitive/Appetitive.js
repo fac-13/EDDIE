@@ -1,7 +1,8 @@
 import React from 'react';
-import Header from '../Header/Header';
 import styled from 'styled-components';
-import { Happy } from '../Assets/Assets';
+
+import Header from '../Header/Header';
+import Happy from './Happy';
 
 const Section = styled.section`
   border-top: 0.3em solid ${props => props.theme.blue};
@@ -16,13 +17,6 @@ const Article = styled.article`
   text-align: center;
 `;
 
-const Logo = styled.svg`
-  height: 5rem;
-  width: 5rem;
-  padding: 1rem;
-  margin: 1em auto 0 auto;
-`;
-
 const P = styled.p`
   padding: 1em;
   text-align: left;
@@ -33,9 +27,7 @@ const Appetitive = () => (
     <Header title="Appetitive state" />
     <Section>
       <Article>
-        <Logo>
-          <Happy />
-        </Logo>
+        <Happy />
         <P>
           At the appetitive state, your muscles relax enabling blood flow to the
           core of your body (e.g., chest, genitals). Sensations in these areas

@@ -16,7 +16,7 @@ const Article = styled.article`
   text-align: center;
 `;
 
-const Logo = styled.svg`
+const Category = styled(Relational)`
     height:5rem;
     width:5rem;
     padding:1rem;
@@ -34,7 +34,7 @@ const Communication = () => (
     <Header title="Cultivate communication" />
   <Section>
   <Article>
-    <Logo><Relational /></Logo>
+    <Category />
       <P>
         Whether you have sex with a regular or casual partner, there is always
         some space to negotiate sexual relations that are both comfortable and

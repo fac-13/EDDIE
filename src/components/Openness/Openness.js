@@ -16,12 +16,12 @@ const Article = styled.article`
   max-width: 1000px;
 `;
 
-const Logo = styled.svg`
-  height: 5rem;
-  width: 5rem;
-  padding: 1rem;
-  margin: 1em auto 0 auto;
-`;
+const Category = styled(Psychological)`
+    height:5rem;
+    width:5rem;
+    padding:1rem;
+    margin: 1em auto 0 auto;
+`
 
 const P = styled.p`
   padding: 1em;
@@ -33,9 +33,7 @@ const Openness = () => (
     <Header title="Cultivate openness" />
     <Section>
       <Article>
-        <Logo>
-          <Psychological />
-        </Logo>
+    <Category />
         <P>
           We experience emotional reactions (feelings) throughout the day, from
           excitement when meeting a good friend for lunch to irritation when
