@@ -49,6 +49,7 @@ const Wave = styled.div`
   top: -150px;
   width: 6000px;
   height: 350px;
+  overflow:hidden;
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   @keyframes wave {
     0% {
