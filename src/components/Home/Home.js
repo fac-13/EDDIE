@@ -34,6 +34,7 @@ const Main = styled.main`
 const Header = styled.header`
   ${flexContainer('column', 'center', 'center')};
 `;
+
 const Title = styled.h1`
   font-family: ${props => props.theme.headerFont};
   font-weight: 300;

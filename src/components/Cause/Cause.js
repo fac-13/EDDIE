@@ -24,6 +24,8 @@ const Div = styled.div`
   ${flexContainer('row-reverse', 'flex-end', 'center')};
   height: 5rem;
   width: 100%;
+  margin: auto;
+  max-width: 1000px;
   color: ${props => props.theme.white}
   font-weight: 300;
   opacity: 0.9;
@@ -40,6 +42,12 @@ const Div = styled.div`
       ? `background-color: ${props.theme.lightSlate}`
       : null};
 `;
+
+const H2 = styled.h2`
+  font-weight: 700;
+  font-size: 1.2em;
+  color: ${props => props.theme.white}; 
+`
 
 const Logo = styled.svg`
   height: 3rem;
@@ -95,8 +103,9 @@ const Cause = ({ cause }) => {
   return (
     <StyledSlide>
       <Div type={cause.type}>
-        <h2>{cause.type}</h2>
-        <Logo>{cause.svg}</Logo>
+        <H2>{cause.type}</H2>
+        <Logo>{cause.svg}</Logo> 
+
       </Div>
       <List>
         {cause.list.map((item, index) => (
