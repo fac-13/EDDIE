@@ -6,10 +6,10 @@ import styled from 'styled-components';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Div = styled.div`
-margin: 10px;
+  margin: 10px;
 `;
 
-const StyledDot = styled(Dot) `
+const StyledDot = styled(Dot)`
   height: 12px;
   width: 12px;
   margin: 3px;
@@ -27,11 +27,12 @@ const StyledDot = styled(Dot) `
 
 class Dots extends React.Component {
   render() {
+    const { slides, currentSlide } = this.props;
     return (
       <Div>
-        {this.props.slides.map((_, index) => (
+        {slides.map((_, index) => (
           <StyledDot
-            selected={this.props.currentSlide === index}
+            selected={currentSlide === index}
             key={`key-${index}`}
             slide={index}
           />

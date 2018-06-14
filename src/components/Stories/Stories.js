@@ -1,8 +1,10 @@
 import React from 'react';
-
-import Header from '../Header/Header';
-import Carousel from '../Carousel/Carousel';
 import styled from 'styled-components';
+
+import { flexContainer } from '../../utils/mixins';
+
+import Header from '../Shared/Header/Header';
+import Carousel from '../Carousel/Carousel';
 
 // Data for carousel
 const SlidesData = [
@@ -111,28 +113,26 @@ const SlidesData = [
 ];
 
 const Main = styled.main`
-${params => params.theme.flexContainer('column', 'space-around', 'center')}
-height: 90%;
-width: 100%;
-@media (min-width: 700px){
-  max-width: 700px;
-}
-`
+  ${flexContainer('column', 'space-around', 'center')};
+  height: 90%;
+  width: 100%;
+  @media (min-width: 700px) {
+    max-width: 700px;
+  }
+`;
 const Instructions = styled.p`
-width: 80%;
-text-align: center;
-height: 8%;
-margin: 5px;
-`
+  width: 80%;
+  text-align: center;
+  height: 8%;
+  margin: 5px;
+`;
 
 const Stories = () => (
   <React.Fragment>
     <Header title="Stories" />
     <Main>
       <Carousel type="stories" slides={SlidesData} />
-      <Instructions>
-        Click each item to learn how he coped with ED
-      </Instructions>
+      <Instructions>Click each item to learn how he coped with ED</Instructions>
     </Main>
   </React.Fragment>
 );

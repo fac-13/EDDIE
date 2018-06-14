@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, Simulate } from 'react-testing-library';
-import { ThemeProvider } from 'styled-components';
 
 import Story from './Story';
 import { CarouselProvider } from 'pure-react-carousel';
@@ -33,11 +32,9 @@ const story = {
 describe('test Story', () => {
   test('displays title of Story', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <CarouselProvider>
-          <Story story={story} />
-        </CarouselProvider>
-      </ThemeProvider>
+      <CarouselProvider>
+        <Story story={story} />
+      </CarouselProvider>
     );
     const actual = container.querySelector('h2').textContent;
     expect(actual).toEqual('Daniel');
@@ -45,11 +42,9 @@ describe('test Story', () => {
 
   test('displays symptom of Story', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <CarouselProvider>
-          <Story story={story} />
-        </CarouselProvider>
-      </ThemeProvider>
+      <CarouselProvider>
+        <Story story={story} />
+      </CarouselProvider>
     );
     const actual = container.querySelector('p').textContent;
     expect(actual).toEqual('Smoker. Diabetic');
@@ -57,11 +52,9 @@ describe('test Story', () => {
 
   test('displays intervention of first symptom', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <CarouselProvider>
-          <Story story={story} />
-        </CarouselProvider>
-      </ThemeProvider>
+      <CarouselProvider>
+        <Story story={story} />
+      </CarouselProvider>
     );
     const symptom = container.querySelector('div[type]');
     Simulate.click(symptom);
@@ -72,11 +65,9 @@ describe('test Story', () => {
 
   test('closes intervention of first symptom', () => {
     const { container } = render(
-      <ThemeProvider theme={{ flexContainer: () => {} }}>
-        <CarouselProvider>
-          <Story story={story} />
-        </CarouselProvider>
-      </ThemeProvider>
+      <CarouselProvider>
+        <Story story={story} />
+      </CarouselProvider>
     );
     const symptom = container.querySelector('div[type]');
     Simulate.click(symptom);

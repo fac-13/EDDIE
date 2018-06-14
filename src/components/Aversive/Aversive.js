@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Header from '../Header/Header';
+import Header from '../Shared/Header/Header';
 import Sad from './Sad';
 
 const Section = styled.section`

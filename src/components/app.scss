@@ -15,17 +15,18 @@
 }
 
 body {
+  @include flex-container(column, center, center);
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  @include flex-container(column, center, center);
 }
 
 #root {
   @include flex-container(column, flex-start, center);
   height: 100vh;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   color: #3d4f51;
 }

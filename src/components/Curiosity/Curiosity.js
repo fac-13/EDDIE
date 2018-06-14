@@ -1,7 +1,9 @@
 import React from 'react';
-import Header from '../Header/Header';
-import { Physical } from '../Assets/Assets';
 import styled from 'styled-components';
+
+import { Physical } from '../Assets/Assets';
+
+import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
   border-top: 0.3em solid ${props => props.theme.green};

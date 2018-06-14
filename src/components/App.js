@@ -32,17 +32,6 @@ const fontStack = [
   '"Segoe UI Symbol"'
 ];
 
-const flexContainer = (direction, justify, align) => `
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: ${direction};
-  justify-content: ${justify};
-  align-items: ${align};
-  `;
-
 const App = () => (
   <ThemeProvider
     theme={{
@@ -57,8 +46,7 @@ const App = () => (
       slate: '#517B7B',
       lightSlate: '#7CA5A9',
       bodyFont: fontStack,
-      headerFont: ['Lato', ...fontStack],
-      flexContainer
+      headerFont: ['Lato', ...fontStack]
     }}
   >
     <Switch>
