@@ -1,37 +1,89 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Header from '../Header/Header';
+import styled from 'styled-components';
+
+const Article = styled.article`
+  display:block;
+  margin: auto;
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  border-top: .3em solid grey;;
+`;
+
+const H3 = styled.h3`
+  font-weight: 700;
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  color: ${props => props.theme.darkBlue}; 
+  padding: 1em;
+`
+
+const H4 = styled.h4`
+  font-weight: 700;
+  padding-left: 0.5em;
+  color: ${props => props.theme.black}; 
+`
+
+const P = styled.p`
+  padding-bottom: 1em;
+  text-align:center
+`;
+
+const Button = styled(Link)`
+  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  height: 30px;
+  max-width: 80%;
+  font-size:1.1rem;
+  box-shadow: 1px 4px 10px lightgrey;
+  text-decoration: none;
+  padding: .3rem;
+  margin: 1em auto;
+  &: focus {
+    cursor: pointer;
+    box- shadow: 0 0 10px ${props => props.theme.white};
+  }
+  &: active {
+    outline: none;
+    box- shadow: 0 0 10px ${props => props.theme.white};
+  }
+`;
+
+
+
 
 const Resources = () => (
   <React.Fragment>
     <Header title="Resources" />
 
-    <article>
-      <Link to="stories" className="resources__btn resources__btn--self">
+    <Article>
+      <Button to="stories" style={{backgroundColor:'#9ADA65'}}>
         Male Mindful Self Practice
-      </Link>
-      <Link to="stories" className="resources__btn resources__btn--kegel">
+      </Button>
+      <Button to="stories" style={{backgroundColor:'#7CA5A9'}}>
         Kegel exercises for men
-      </Link>
-      <Link to="stories" className="resources__btn resources__btn--sensate">
+      </Button>
+      <Button to="stories" style={{backgroundColor:'#FD8489'}}>
         Sensate focus
-      </Link>
+      </Button>
 
-      <h3>Recommended reading</h3>
+      <H3>Recommended reading</H3>
 
-      <h4>Coping with Eectile Dysfunction</h4>
-      <h5>by Barry McCarthy and Michael Metz</h5>
+      <H4>Coping with Eectile Dysfunction</H4>
+      <P>by Barry McCarthy and Michael Metz</P>
 
-      <h4>The New Male Sexuality</h4>
-      <h5>by Bernie Zilbergeld</h5>
+      <H4>The New Male Sexuality</H4>
+      <P>by Bernie Zilbergeld</P>
 
-      <h4>The Relate Guide to Sex in Loving Relationships</h4>
-      <h5>by Sarah Litvinoff</h5>
+      <H4>The Relate Guide to Sex in Loving Relationships</H4>
+      <P>by Sarah Litvinoff</P>
 
-      <h4>The Massage Secrets for Lovers</h4>
-      <h5>by Andrew Stanway</h5>
-    </article>
+      <H4>The Massage Secrets for Lovers</H4>
+      <P>by Andrew Stanway</P>
+    </Article>
   </React.Fragment>
 );
 

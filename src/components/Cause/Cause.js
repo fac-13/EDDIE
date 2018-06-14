@@ -20,26 +20,19 @@ const StyledSlide = styled(Slide)`
 
 const Div = styled.div`
   ${props => props.theme.flexContainer('column', 'center', 'center')};
-  height: 8rem;
-  width: 8rem;
   margin: auto;
-  ${props =>
-    props.type === 'PHYSICAL'
-      ? `background-color: ${props.theme.green}`
-      : null};
-  ${props =>
-    props.type === 'RELATIONAL'
-      ? `background-color: ${props.theme.coral}`
-      : null};
-  ${props =>
-    props.type === 'PSYCHOLOGICAL'
-      ? `background-color: ${props.theme.slate}`
-      : null};
 `;
+
+const H2 = styled.h2`
+  font-weight: 700;
+  font-size: 1.2em;
+  color: ${props => props.theme.darkBlue}; 
+`
 
 const Logo = styled.svg`
     height:5rem;
     width:5rem;
+    padding:1rem;
 `
 
 const List = styled.ul`
@@ -94,7 +87,7 @@ const Cause = ({ cause }) => {
   return (
     <StyledSlide>
       <Div type={cause.type}>
-        <h2>{cause.type}</h2>
+        <H2>{cause.type}</H2>
         <Logo>{cause.svg}</Logo> 
       </Div>
       <List>

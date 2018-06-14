@@ -1,40 +1,65 @@
 import React from 'react';
 import Header from '../Header/Header';
+import { Physical } from '../Assets/Assets';
+import styled from 'styled-components';
+
+
+const Article = styled.article`
+  display:block;
+  margin: auto;
+  height: 87%;
+  text-align: center;
+  border-top: .3em solid ${props => props.theme.green};;
+`;
+
+const Logo = styled.svg`
+    height:5rem;
+    width:5rem;
+    padding:1rem;
+    margin: 1em auto 0 auto;
+`
+
+
+const P = styled.p`
+  padding: 1em;
+  text-align:left
+`;
+
 
 const Curiosity = () => (
   <React.Fragment>
     <Header title="Cultivate your curiosity" />
-
-    <article>
-      <p>
+    <Article>
+    <Logo><Physical /></Logo>
+      <P>
         Explore ways that increase physical comfort and emotional excitement.
-      </p>
+      </P>
 
-      <p>
+      <P>
         You can start on your own by using the
         <a>mindful masturbation exercise</a>.
-      </p>
+      </P>
 
-      <p>
+      <P>
         The aim of this exercise is to increase your level of physical comfort
         and your awareness of what increases your pleasure.
-      </p>
+      </P>
 
-      <p>
+      <P>
         You might also find helpful to increase your awareness of the muscles
         around the genitals by practising <a>Kegels for Men</a>.
-      </p>
+      </P>
 
-      <p>
+      <P>
         Finally, if you have a sexual partner, you can explore together sexual
         experiences that do not involve penetration (<a>Sensate Focus</a>).
-      </p>
+      </P>
 
-      <p>
+      <P>
         This will help to increase your sexual repertoire and communication
         skills.
-      </p>
-    </article>
+      </P>
+    </Article>
   </React.Fragment>
 );
 
