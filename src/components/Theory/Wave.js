@@ -17,7 +17,7 @@ let Water = styled.div`
   position: absolute;
   bottom: 0;
   top: -150px;
-  width: 3000px;
+  width: 6000px;
   height: 350px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   @keyframes wave {

@@ -1,10 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { flexContainer } from '../../utils/mixins';
 
-import Header from '../Header/Header';
+import Header from '../Shared/Header/Header';
 import Carousel from '../Carousel/Carousel';
-import styled from 'styled-components';
 
 // Data for carousel
 const SlidesData = [

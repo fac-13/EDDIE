@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from '../Header/Header';
 import styled from 'styled-components';
+
+import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
   border-top: 0.3em solid ${props => props.theme.slate};
@@ -28,7 +29,7 @@ const P = styled.p`
   padding: 1em;
   text-align: left;
   color: ${props => props.theme.black};
-  line-height:1.1em;
+  line-height: 1.1em;
   font-weight: 700;
 `;
 

@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 import { flexContainer } from '../../utils/mixins';
 
-import 'pure-react-carousel/dist/react-carousel.es.css';
-
 export default styled(Link)`
   ${flexContainer('row', 'center', 'center')};
   width: 250px;

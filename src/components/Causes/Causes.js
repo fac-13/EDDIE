@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../Header/Header';
+import Header from '../Shared/Header/Header';
 import Carousel from '../Carousel/Carousel';
 
 const slidesData = [

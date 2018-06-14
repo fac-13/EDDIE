@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { flexContainer } from '../../utils/mixins';
 
-import Header from '../Header/Header';
+import Header from '../Shared/Header/Header';
 
 import Link from './Link';
 import Wave from './Wave';
