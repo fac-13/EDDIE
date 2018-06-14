@@ -3,12 +3,17 @@ import Header from '../Header/Header';
 import styled from 'styled-components';
 import { Sad } from '../Assets/Assets';
 
+const Section = styled.section`
+  border-top: 0.3em solid ${props => props.theme.blue};
+  width: 100%;
+  height: 90%;
+`;
+
 const Article = styled.article`
   display:block;
   margin: auto;
-  height: 90%;
   text-align: center;
-  border-top: .3em solid ${props => props.theme.blue};;
+  max-width: 1000px;
 `;
 
 const Logo = styled.svg`
@@ -26,6 +31,7 @@ const P = styled.p`
 const Aversive = () => (
   <React.Fragment>
     <Header title="Aversive state" />
+    <Section>
     <Article>
     <Logo><Sad /></Logo>
       <P>
@@ -44,6 +50,7 @@ const Aversive = () => (
         life.
       </P>
     </Article>
+    </Section>
   </React.Fragment>
 );
 

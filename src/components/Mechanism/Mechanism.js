@@ -7,12 +7,14 @@ const Section = styled.section`
 padding: 0.5em;
 border-top: .3em solid ${props => props.theme.blue};
 height: 80%;
+width: 100%;
 `
 
 const Article = styled.article`
   display:block;
-  margin: 1em;
+  margin: 1em auto;
   padding: 1em;
+  max-width: 1000px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 

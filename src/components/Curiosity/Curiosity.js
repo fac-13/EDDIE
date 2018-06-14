@@ -4,12 +4,19 @@ import { Physical } from '../Assets/Assets';
 import styled from 'styled-components';
 
 
+const Section = styled.section`
+  border-top: .3em solid ${props => props.theme.green};
+  width: 100%;
+  height: 90%;
+`;
+
+
 const Article = styled.article`
   display:block;
   margin: auto;
   height: 87%;
   text-align: center;
-  border-top: .3em solid ${props => props.theme.green};;
+  max-width: 1000px; 
 `;
 
 const Logo = styled.svg`
@@ -29,6 +36,7 @@ const P = styled.p`
 const Curiosity = () => (
   <React.Fragment>
     <Header title="Cultivate your curiosity" />
+    <Section>
     <Article>
     <Logo><Physical /></Logo>
       <P>
@@ -60,6 +68,7 @@ const Curiosity = () => (
         skills.
       </P>
     </Article>
+    </Section>
   </React.Fragment>
 );
 

@@ -3,13 +3,17 @@ import Header from '../Header/Header';
 import { Relational } from '../Assets/Assets';
 import styled from 'styled-components';
 
+const Section = styled.section`
+  border-top: .3em solid ${props => props.theme.coral};
+  width: 100%;
+  height: 87%;
+`
 
 const Article = styled.article`
   display:block;
   margin: auto;
-  height: 87%;
+  max-width: 1000px;
   text-align: center;
-  border-top: .3em solid ${props => props.theme.coral};;
 `;
 
 const Logo = styled.svg`
@@ -28,8 +32,8 @@ const P = styled.p`
 const Communication = () => (
   <React.Fragment>
     <Header title="Cultivate communication" />
-
-    <Article>
+  <Section>
+  <Article>
     <Logo><Relational /></Logo>
       <P>
         Whether you have sex with a regular or casual partner, there is always
@@ -59,6 +63,7 @@ const Communication = () => (
         reading.
       </P>
     </Article>
+    </Section>
   </React.Fragment>
 );
 
