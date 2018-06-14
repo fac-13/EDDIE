@@ -1,12 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import { flexContainer } from '../../utils/mixins';
 
 import Header from '../Header/Header';
 import Link from './Link';
 import Wave from './Wave';
-
-import styled from 'styled-components';
 
 const Main = styled.main`
   ${flexContainer('column', 'space-between', 'center')} width: 100%;
