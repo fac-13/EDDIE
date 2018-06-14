@@ -5,7 +5,7 @@ import Carousel from '../Carousel/Carousel';
 
 const slidesData = [
   {
-    type: 'PHYSICAL',
+    type: 'PHYSICAL CAUSES',
     list: [
       'Surgery (e.g. prostate removal)',
       'Medications (e.g. anti-depressants, high-blood pressure medications)',
@@ -16,10 +16,10 @@ const slidesData = [
     text:
       'If you believe or know that your ED is caused by any of the reasons above, speak to your GP and ask for referral to a specialist sexual health service',
     link: 'curiosity',
-    svg: <Physical/>
+    svg: <Physical />
   },
   {
-    type: 'PSYCHOLOGICAL',
+    type: 'PSYCHOLOGICAL CAUSES',
     list: [
       'Anxiety, worry or fear',
       'Tension or stress',
@@ -33,10 +33,10 @@ const slidesData = [
     text:
       'If you do not experience any difficulties with your erection when masturbating but you experience such difficulties when having sex with a partner, then the causes are 100% psychological-relational.',
     link: 'openness',
-    svg: <Psychological/>
+    svg: <Psychological />
   },
   {
-    type: 'RELATIONAL',
+    type: 'RELATIONAL CAUSES',
     list: [
       'Worrying about the impact of your sexual difficulties on your relationship',
       'Having difficulties in talking openly with your partner about your sexual difficulties',
@@ -46,7 +46,7 @@ const slidesData = [
     ],
     text: null,
     link: 'communication',
-    svg: <Relational/>
+    svg: <Relational />
   }
 ];
 

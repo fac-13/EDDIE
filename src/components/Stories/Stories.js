@@ -114,11 +114,15 @@ const Main = styled.main`
 ${params => params.theme.flexContainer('column', 'space-around', 'center')}
 height: 90%;
 width: 100%;
+@media (min-width: 700px){
+  max-width: 700px;
+}
 `
 const Instructions = styled.p`
 width: 80%;
 text-align: center;
 height: 8%;
+margin: 5px;
 `
 
 const Stories = () => (
@@ -127,7 +131,7 @@ const Stories = () => (
     <Main>
       <Carousel type="stories" slides={SlidesData} />
       <Instructions>
-        Click each item to learn why and how Peter coped with ED
+        Click each item to learn how he coped with ED
       </Instructions>
     </Main>
   </React.Fragment>
