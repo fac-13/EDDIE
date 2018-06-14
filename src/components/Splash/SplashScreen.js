@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
+import { flexContainer } from '../../utils/mixins';
+
 export default styled.div`
-${props => props.theme.flexContainer('column', 'center', 'center')}
+${flexContainer('column', 'center', 'center')}
 background-color: ${props => props.theme.blue};
 height: 100vh;
 width: 100vw;

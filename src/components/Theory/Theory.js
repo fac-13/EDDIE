@@ -1,29 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { flexContainer } from '../../utils/mixins';
+
 import Header from '../Header/Header';
 
 import styled from 'styled-components';
 
 const Main = styled.main`
-${params => params.theme.flexContainer('column', 'space-between', 'center')}
-width: 100%;
-height: 100%;
-`
+  ${flexContainer('column', 'space-between', 'center')} width: 100%;
+  height: 100%;
+`;
 
 const Buttons = styled.div`
-${params => params.theme.flexContainer('column', 'space-around', 'center')}
-  height: 50%;
+  ${flexContainer('column', 'space-around', 'center')} height: 50%;
   width: 100%;
   max-width: 800px;
   @media only screen and (min-width: 1000px) {
-    ${params => params.theme.flexContainer('row', 'space-between', 'center')}
+    ${flexContainer('row', 'space-between', 'center')};
   }
-`
+`;
 
-const StyledLink = styled(Link) `
-${params => params.theme.flexContainer('row', 'center', 'center')}
-  width: 250px;
+const StyledLink = styled(Link)`
+  ${flexContainer('row', 'center', 'center')} width: 250px;
   height: 70px;
   background: ${params => params.theme.white};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -32,28 +31,22 @@ ${params => params.theme.flexContainer('row', 'center', 'center')}
   text-transform: uppercase;
   text-decoration: none;
   color: ${params => params.theme.darkBlue};
-`
+`;
 
 const Svg = styled.svg`
-width: 100%;
+  width: 100%;
   @media only screen and (min-width: 800px) {
     transform: scaleX(1.6);
   }
-`
+`;
 const Theory = () => (
   <React.Fragment>
     <Header title="Theory" />
     <Main>
       <Buttons>
-        <StyledLink to="causes">
-          Causes
-        </StyledLink>
-        <StyledLink to="mechanism">
-          Mechanism
-        </StyledLink>
-        <StyledLink to="myths">
-          Myths
-        </StyledLink>
+        <StyledLink to="causes">Causes</StyledLink>
+        <StyledLink to="mechanism">Mechanism</StyledLink>
+        <StyledLink to="myths">Myths</StyledLink>
       </Buttons>
       <Svg
         className="theory__svg"

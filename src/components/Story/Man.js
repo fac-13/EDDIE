@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import propTypes from 'prop-types';
 
 const Svg = styled.svg`
   position: absolute;
@@ -15,7 +16,7 @@ const Path = styled.path`
   ${props => (props.name === 'Jorge' ? 'fill: #a06a85' : null)};
 `;
 
-const Man = name => (
+const Man = ({ name }) => (
   <Svg viewBox="0 0 120 280" xmlns="http://www.w3.org/2000/svg">
     <Path
       name={name}
@@ -24,4 +25,7 @@ const Man = name => (
   </Svg>
 );
 
+Man.propTypes = {
+  name: propTypes.string
+};
 export default Man;

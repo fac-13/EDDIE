@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import forest from '../../../assets/forest.svg';
 
+import { flexContainer } from '../../utils/mixins';
+
 const Main = styled.main`
-  ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+  ${flexContainer('column', 'space-around', 'center')};
   height: 100vh;
   width: 100vw;
   background-image: url(${forest});
@@ -30,7 +32,7 @@ const Main = styled.main`
 `;
 
 const Header = styled.header`
-  ${props => props.theme.flexContainer('column', 'center', 'center')};
+  ${flexContainer('column', 'center', 'center')};
 `;
 const Title = styled.h1`
   font-family: ${props => props.theme.headerFont};
@@ -47,7 +49,7 @@ const Subtitle = styled.h2`
 `;
 
 const Blurb = styled.div`
-  ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+  ${flexContainer('column', 'space-around', 'center')};
   height: 10rem;
   width: 80%;
   max-width: 600px;
@@ -59,13 +61,13 @@ const Blurb = styled.div`
 `;
 
 const Buttons = styled.div`
-  ${props => props.theme.flexContainer('row', 'space-between', 'center')};
+  ${flexContainer('row', 'space-between', 'center')};
   width: 80%;
   max-width: 600px;
 `;
 
 const Button = styled(Link)`
-  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  ${flexContainer('row', 'center', 'center')};
   background-color: ${props => props.theme.darkBlue};
   border-radius: 5px;
   color: ${props => props.theme.white};
@@ -78,11 +80,11 @@ const Button = styled(Link)`
   text-transform: uppercase;
   &: focus {
     cursor: pointer;
-    box- shadow: 0 0 10px ${props => props.theme.white};
+    box-shadow: 0 0 10px ${props => props.theme.white};
   }
   &: active {
     outline: none;
-    box- shadow: 0 0 10px ${props => props.theme.white};
+    box-shadow: 0 0 10px ${props => props.theme.white};
   }
 `;
 
