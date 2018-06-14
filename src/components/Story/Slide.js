@@ -10,10 +10,7 @@ export default styled(Slide)`
   padding-bottom: 0;
 
   .carousel__inner-slide {
-    ${flexContainer('column', 'space-around', 'center')};
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-    padding-bottom: 0px;
+    height: 100vh; !important
+    ${flexContainer('column', 'center', 'center')};
   }
 `;

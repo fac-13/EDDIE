@@ -17,6 +17,11 @@ npm i
 ## Tech Stack
 
 - React
+- React Router
+- Pure React Carousel
+- Sass
+- Styled Components
+- Jest
 - Travis
 - Babel
-- Sass
+

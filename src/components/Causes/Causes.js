@@ -6,7 +6,7 @@ import Carousel from '../Carousel/Carousel';
 
 const slidesData = [
   {
-    type: 'PHYSICAL',
+    type: 'PHYSICAL CAUSES',
     list: [
       'Surgery (e.g. prostate removal)',
       'Medications (e.g. anti-depressants, high-blood pressure medications)',
@@ -20,7 +20,7 @@ const slidesData = [
     svg: <Physical />
   },
   {
-    type: 'PSYCHOLOGICAL',
+    type: 'PSYCHOLOGICAL CAUSES',
     list: [
       'Anxiety, worry or fear',
       'Tension or stress',
@@ -37,7 +37,7 @@ const slidesData = [
     svg: <Psychological />
   },
   {
-    type: 'RELATIONAL',
+    type: 'RELATIONAL CAUSES',
     list: [
       'Worrying about the impact of your sexual difficulties on your relationship',
       'Having difficulties in talking openly with your partner about your sexual difficulties',

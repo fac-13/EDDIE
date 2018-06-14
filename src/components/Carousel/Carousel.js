@@ -29,7 +29,6 @@ const Row = styled.div`
 `;
 
 const StyledButtonBack = styled(ButtonBack)`
-  background-color: transparent;
   color: ${props => props.theme.black};
   width: 5%;
   height: ${props => (props.type === 'causes' ? '80%' : '70%')};
@@ -38,15 +37,20 @@ const StyledButtonBack = styled(ButtonBack)`
   position: absolute;
   left: 0;
   z-index: 1;
-  font-size: 1.5em;
-
-  &:hover {
-    font-weight: bold;
+  opacity: 0;
+  @media (min-width: 600px) {
+    &:hover {
+      background-color: ${props => props.theme.darkBlue};
+      opacity: 0.1;
+      font-weight: bold;
+      font-size: 5em;
+      color: black;
+      height: 100vh;
+    }
   }
 `;
 
 const StyledButtonNext = styled(ButtonNext)`
-  background-color: transparent;
   color: ${props => props.theme.black};
   width: 5%;
   height: ${props => (props.type === 'causes' ? '80%' : '70%')};
@@ -54,10 +58,17 @@ const StyledButtonNext = styled(ButtonNext)`
   outline: none;
   position: absolute;
   right: 0;
+  opacity: 0;
   z-index: 1;
-  font-size: 1.5em;
-  &:hover {
-    font-weight: bold;
+  @media (min-width: 600px) {
+    &:hover {
+      background-color: ${props => props.theme.darkBlue};
+      opacity: 0.1;
+      font-weight: bold;
+      font-size: 5em;
+      color: black;
+      height: 100vh;
+    }
   }
 `;
 
@@ -73,7 +84,7 @@ const StyledSlider = styled(Slider)`
   .carousel__slider-tray {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: ${props => (props.type === 'stories' ? 'hidden' : 'scroll')};
   }
 `;
 

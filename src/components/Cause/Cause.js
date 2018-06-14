@@ -21,34 +21,36 @@ const StyledSlide = styled(Slide)`
 `;
 
 const Div = styled.div`
-  ${flexContainer('column', 'center', 'center')};
-  height: 8rem;
-  width: 8rem;
-  margin: auto;
+  ${flexContainer('row-reverse', 'flex-end', 'center')};
+  height: 5rem;
+  width: 100%;
+  color: ${props => props.theme.white}
+  font-weight: 300;
+  opacity: 0.9;
   ${props =>
-    props.type === 'PHYSICAL'
-      ? `background-color: ${props.theme.green}`
+    props.type === 'PHYSICAL CAUSES'
+      ? `background-color: ${props.theme.lightGreen}`
       : null};
   ${props =>
-    props.type === 'RELATIONAL'
-      ? `background-color: ${props.theme.coral}`
+    props.type === 'RELATIONAL CAUSES'
+      ? `background-color: ${props.theme.lightCoral}`
       : null};
   ${props =>
-    props.type === 'PSYCHOLOGICAL'
-      ? `background-color: ${props.theme.slate}`
+    props.type === 'PSYCHOLOGICAL CAUSES'
+      ? `background-color: ${props.theme.lightSlate}`
       : null};
 `;
 
 const Logo = styled.svg`
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0.7rem;
 `;
 
 const List = styled.ul`
   ${flexContainer('column', 'space-around', 'center')};
   list-style: initial;
-  line-height: 1.2em;
-  margin: 1em auto 1em auto;
+  margin: 0.5em auto 0.5em auto;
   max-width: 900px;
 `;
 
@@ -66,7 +68,7 @@ const StyledLink = styled(Link)`
   text-align: center;
   height: 3em;
   max-width: 250px;
-  margin: 2em auto;
+  margin: 1.5em auto;
   box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
   text-decoration: none;
   text-transform: uppercase;
@@ -81,13 +83,12 @@ const StyledLink = styled(Link)`
 `;
 
 const Warning = styled.div`
-  padding: 1em;
-  line-height: 1.5em;
-  border: 0.5em red dotted;
-  font-weight: 700;
-  position: relative;
+  padding: 0.5em;
+  border: 0.2em red dotted;
+  font-weight: 500;
   max-width: 900px;
-  margin: auto;
+  width: 80%;
+  margin: 1em auto;
 `;
 
 const Cause = ({ cause }) => {
@@ -102,7 +103,7 @@ const Cause = ({ cause }) => {
           <ListItem key={`key-${index}`}>{item}</ListItem>
         ))}
       </List>
-      {!cause.text ? null : <Warning>{cause.text}</Warning>}
+      {cause.text ? <Warning>{cause.text}</Warning> : null}
       <StyledLink to={cause.link}>
         STEPS YOU<br />CAN TAKE
       </StyledLink>

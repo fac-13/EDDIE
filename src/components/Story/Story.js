@@ -20,30 +20,29 @@ const Name = styled.h2`
 
 const About = styled.h3`
   font-family: ${props => props.theme.headerFont};
-  font-weight: bold;
   font-size: 1.1rem;
 `;
 
 const Main = styled.div`
-  ${flexContainer('row', 'center', 'center')};
-  position: relative;
-  height: 80%;
+  height: 90%;
   width: 90%;
 `;
 
 const Content = styled.div`
   ${flexContainer('column', 'space-around', 'flex-start')};
-  height: 100%;
+  height: 75%;
   width: 100%;
 `;
 
 const Intervention = Symptom.extend`
-  height: 87%;
+  height: 90%;
+  overflow-y: scroll;
 `;
 
 const Text = styled.p`
   width: 90%;
-  font-weight: 500;
+  font-weight: 300;
+  line-height: 2ch;
 `;
 
 class Story extends React.Component {
