@@ -20,7 +20,8 @@ const Q = styled.blockquote`
   background-color: rgba(0, 0, 0, 0.05);
   padding: 1em;
   margin: 0.5em;
-  border-left: 10px solid ${props => props.theme.darkBlue};;
+  border-left: 10px solid ${props => props.theme.coral};
+  color: ${props => props.theme.black};
 `;
 
 const P = styled.p`
@@ -28,6 +29,7 @@ const P = styled.p`
   text-align: left;
   color: ${props => props.theme.black};
   line-height:1.1em;
+  font-weight: 700;
 `;
 
 const Myths = () => (
