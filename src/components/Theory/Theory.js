@@ -27,7 +27,7 @@ ${params => params.theme.flexContainer('row', 'center', 'center')}
   height: 70px;
   background: ${params => params.theme.white};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
