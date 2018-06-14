@@ -113,7 +113,8 @@ const SlidesData = [
 ];
 
 const Main = styled.main`
-  ${flexContainer('column', 'space-around', 'center')} height: 90%;
+  ${flexContainer('column', 'space-around', 'center')};
+  height: 90%;
   width: 100%;
   @media (min-width: 700px) {
     max-width: 700px;

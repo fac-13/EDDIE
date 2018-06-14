@@ -35,19 +35,19 @@ const Title = styled.h2`
   color: ${props => props.theme.white};
 `;
 
-Physical = styled(Physical)`
+const StyledPhysical = styled(Physical)`
   height: 3rem;
   width: 3rem;
   margin: 0.7rem;
 `;
 
-Psychological = styled(Psychological)`
+const StyledPsychological = styled(Psychological)`
   height: 3rem;
   width: 3rem;
   margin: 0.7rem;
 `;
 
-Relational = styled(Relational)`
+const StyledRelational = styled(Relational)`
   height: 3rem;
   width: 3rem;
   margin: 0.7rem;
@@ -56,9 +56,9 @@ Relational = styled(Relational)`
 const SectionHeader = ({ type }) => (
   <Header>
     <Title>{type} CAUSES</Title>
-    {type === 'PHYSICAL' ? <Physical /> : null}
-    {type === 'PSYCHOLOGICAL' ? <Psychological /> : null}
-    {type === 'RELATIONAL' ? <Relational /> : null}
+    {type === 'PHYSICAL' ? <StyledPhysical /> : null}
+    {type === 'PSYCHOLOGICAL' ? <StyledPsychological /> : null}
+    {type === 'RELATIONAL' ? <StyledRelational /> : null}
   </Header>
 );
 

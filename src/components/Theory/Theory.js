@@ -4,16 +4,19 @@ import styled from 'styled-components';
 import { flexContainer } from '../../utils/mixins';
 
 import Header from '../Header/Header';
+
 import Link from './Link';
 import Wave from './Wave';
 
 const Main = styled.main`
-  ${flexContainer('column', 'space-between', 'center')} width: 100%;
+  ${flexContainer('column', 'space-between', 'center')};
+  width: 100%;
   height: 100%;
 `;
 
 const Buttons = styled.div`
-  ${flexContainer('column', 'space-around', 'center')} height: 50%;
+  ${flexContainer('column', 'space-around', 'center')};
+  height: 50%;
   width: 100%;
   max-width: 800px;
   @media only screen and (min-width: 1000px) {

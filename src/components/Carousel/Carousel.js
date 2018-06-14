@@ -8,7 +8,7 @@ import CarouselProvider from './CarouselProvider';
 import ButtonBack from './ButtonBack';
 import ButtonNext from './ButtonNext';
 import Slider from './Slider';
-import Dots from '../Dots/Dots';
+import Dots from './Dots';
 
 import Story from '../Story/Story';
 import Cause from '../Cause/Cause';

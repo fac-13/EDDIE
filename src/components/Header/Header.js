@@ -6,11 +6,13 @@ import styled from 'styled-components';
 import { flexContainer } from '../../utils/mixins';
 
 const StyledHeader = styled.header`
-  ${flexContainer('row', 'space-around', 'center')} width: 100%;
+  ${flexContainer('row', 'space-around', 'center')};
+  width: 100%;
   height: 10%;
 `;
 const Back = styled.div`
-  ${flexContainer('row', 'center', 'center')} height: 40%;
+  ${flexContainer('row', 'center', 'center')};
+  height: 40%;
   width: 6%;
 `;
 

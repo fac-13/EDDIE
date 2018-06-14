@@ -6,7 +6,7 @@ const flexContainer = (direction, justify, align) => `
   display: flex;
   flex-direction: ${direction};
   justify-content: ${justify};
-  align-items: ${align};
+  align-items: ${align}
   `;
 
 export { flexContainer };
