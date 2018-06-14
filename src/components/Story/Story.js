@@ -3,6 +3,8 @@ import { Slide } from 'pure-react-carousel';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
 
+import { flexContainer } from '../../utils/mixins';
+
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const StyledSlide = styled(Slide)`
@@ -10,7 +12,7 @@ const StyledSlide = styled(Slide)`
   padding-bottom: 0;
 
   .carousel__inner-slide {
-    ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+    ${flexContainer('column', 'space-around', 'center')};
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
@@ -18,9 +20,8 @@ const StyledSlide = styled(Slide)`
   }
 `;
 
-
 const Header = styled.header`
-  ${props => props.theme.flexContainer('column', 'center', 'center')};
+  ${flexContainer('column', 'center', 'center')};
 `;
 
 const Name = styled.h2`
@@ -36,20 +37,20 @@ const About = styled.h3`
 `;
 
 const Main = styled.div`
-  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  ${flexContainer('row', 'center', 'center')};
   position: relative;
   height: 80%;
   width: 90%;
 `;
 
 const Content = styled.div`
-  ${props => props.theme.flexContainer('column', 'space-around', 'flex-start')};
+  ${flexContainer('column', 'space-around', 'flex-start')};
   height: 100%;
   width: 100%;
 `;
 
 const Symptom = styled.div`
-  ${props => props.theme.flexContainer('column', 'center', 'center')};
+  ${flexContainer('column', 'center', 'center')};
   height: 20%;
   width: 75%;
   opacity: 0.8;

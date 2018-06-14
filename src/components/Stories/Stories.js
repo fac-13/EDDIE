@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { flexContainer } from '../../utils/mixins';
+
 import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
 import styled from 'styled-components';
@@ -111,15 +113,14 @@ const SlidesData = [
 ];
 
 const Main = styled.main`
-${params => params.theme.flexContainer('column', 'space-around', 'center')}
-height: 90%;
-width: 100%;
-`
+  ${flexContainer('column', 'space-around', 'center')} height: 90%;
+  width: 100%;
+`;
 const Instructions = styled.p`
-width: 80%;
-text-align: center;
-height: 8%;
-`
+  width: 80%;
+  text-align: center;
+  height: 8%;
+`;
 
 const Stories = () => (
   <React.Fragment>

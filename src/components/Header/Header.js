@@ -1,27 +1,26 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
-
 import styled from 'styled-components';
 
+import { flexContainer } from '../../utils/mixins';
+
 const StyledHeader = styled.header`
-${props => props.theme.flexContainer('row', 'space-around', 'center')}
-width: 100%;
-height: 10%;
-`
+  ${flexContainer('row', 'space-around', 'center')} width: 100%;
+  height: 10%;
+`;
 const Back = styled.div`
-${props => props.theme.flexContainer('row', 'center', 'center')}
-height: 40%;
-width: 6%;
-`
+  ${flexContainer('row', 'center', 'center')} height: 40%;
+  width: 6%;
+`;
 
 const Title = styled.h1`
-${props => props.theme.flexContainer('row', 'flex-start', 'center')};
+  ${flexContainer('row', 'flex-start', 'center')};
   height: 40%;
   width: 80%;
   font-family: ${props => props.theme.bodyFont};
   font-size: 1.3rem;
-`
+`;
 const Header = ({ title, history }) => {
   return (
     <React.Fragment>

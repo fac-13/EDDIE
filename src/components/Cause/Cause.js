@@ -4,12 +4,14 @@ import { Slide } from 'pure-react-carousel';
 import propTypes from 'prop-types';
 import styled from 'styled-components';
 
+import { flexContainer } from '../../utils/mixins';
+
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const StyledSlide = styled(Slide)`
   height: 100%;
   padding-bottom: 0px;
-  font-size:1.1em;
+  font-size: 1.1em;
 
   .carousel__inner-slide {
     width: 95%;
@@ -19,7 +21,7 @@ const StyledSlide = styled(Slide)`
 `;
 
 const Div = styled.div`
-  ${props => props.theme.flexContainer('column', 'center', 'center')};
+  ${flexContainer('column', 'center', 'center')};
   height: 8rem;
   width: 8rem;
   margin: auto;
@@ -38,12 +40,12 @@ const Div = styled.div`
 `;
 
 const Logo = styled.svg`
-    height:5rem;
-    width:5rem;
-`
+  height: 5rem;
+  width: 5rem;
+`;
 
 const List = styled.ul`
-  ${props => props.theme.flexContainer('column', 'space-around', 'center')};
+  ${flexContainer('column', 'space-around', 'center')};
   list-style: initial;
   line-height: 1.2em;
   margin: 1em auto 1em auto;
@@ -57,7 +59,7 @@ const ListItem = styled.li`
 `;
 
 const StyledLink = styled(Link)`
-  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  ${flexContainer('row', 'center', 'center')};
   background-color: ${props => props.theme.darkBlue};
   border-radius: 5px;
   color: ${props => props.theme.white};
@@ -78,31 +80,29 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Warning = styled.div `
-    padding: 1em;
-    line-height: 1.5em;
-    border: .5em red dotted;
-    font-weight: 700;
-    position: relative;
-    max-width: 900px;
-    margin: auto;
-`
-
-
+const Warning = styled.div`
+  padding: 1em;
+  line-height: 1.5em;
+  border: 0.5em red dotted;
+  font-weight: 700;
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+`;
 
 const Cause = ({ cause }) => {
   return (
     <StyledSlide>
       <Div type={cause.type}>
         <h2>{cause.type}</h2>
-        <Logo>{cause.svg}</Logo> 
+        <Logo>{cause.svg}</Logo>
       </Div>
       <List>
         {cause.list.map((item, index) => (
           <ListItem key={`key-${index}`}>{item}</ListItem>
         ))}
       </List>
-      {(!cause.text) ? null : <Warning>{cause.text}</Warning> }
+      {!cause.text ? null : <Warning>{cause.text}</Warning>}
       <StyledLink to={cause.link}>
         STEPS YOU<br />CAN TAKE
       </StyledLink>

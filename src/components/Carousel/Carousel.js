@@ -6,6 +6,9 @@ import {
   ButtonNext
 } from 'pure-react-carousel';
 import propTypes from 'prop-types';
+
+import { flexContainer } from '../../utils/mixins';
+
 import styled from 'styled-components';
 import Dots from '../Dots/Dots';
 import Story from '../Story/Story';
@@ -14,13 +17,13 @@ import Cause from '../Cause/Cause';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const StyledCarouselProvider = styled(CarouselProvider)`
-  ${props => props.theme.flexContainer('column', 'space-between', 'center')};
+  ${flexContainer('column', 'space-between', 'center')};
   width: 100%;
   height: 90%};
 `;
 
 const Row = styled.div`
-  ${props => props.theme.flexContainer('row', 'space-between', 'center')};
+  ${flexContainer('row', 'space-between', 'center')};
   height: 100%;
   width: 100%;
 `;
@@ -59,7 +62,7 @@ const StyledButtonNext = styled(ButtonNext)`
 `;
 
 const StyledSlider = styled(Slider)`
-  ${props => props.theme.flexContainer('column', 'space-between', 'center')};
+  ${flexContainer('column', 'space-between', 'center')};
   height: 100%;
   width: 100vw;
 
