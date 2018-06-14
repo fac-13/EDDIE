@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Header from '../Header/Header';
 import styled from 'styled-components';
+
+import { Link } from 'react-router-dom';
+
+import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
   border-top: 0.3em solid grey;
