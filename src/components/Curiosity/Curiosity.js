@@ -52,7 +52,7 @@ const Curiosity = () => (
 
         <P>
           You might also find helpful to increase your awareness of the muscles
-          around the genitals by practising <Link to="kengels">Kegels for Men</Link>.
+          around the genitals by practising <Link to="kegels">Kegels for Men</Link>.
         </P>
 
         <P>
