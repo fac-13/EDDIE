@@ -62,19 +62,19 @@ const Resources = () => (
     <Header title="Resources" />
     <Section>
       <Article>
-        <Button to="stories" style={{ backgroundColor: '#9ADA65' }}>
+        <Button to="mindfulness" style={{ backgroundColor: '#517B7B' }}>
           Male Mindful Self Practice
         </Button>
-        <Button to="stories" style={{ backgroundColor: '#7CA5A9' }}>
+        <Button to="kengels" style={{ backgroundColor: '#D73C36' }}>
           Kegel exercises for men
         </Button>
-        <Button to="stories" style={{ backgroundColor: '#FD8489' }}>
+        <Button to="sensate" style={{ backgroundColor: '#24815B' }}>
           Sensate focus
         </Button>
 
         <H3>Recommended reading</H3>
 
-        <H4>Coping with Eectile Dysfunction</H4>
+        <H4>Coping with Erectile Dysfunction</H4>
         <P>by Barry McCarthy and Michael Metz</P>
 
         <H4>The New Male Sexuality</H4>
