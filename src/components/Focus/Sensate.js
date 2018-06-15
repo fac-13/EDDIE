@@ -65,7 +65,7 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
-const Kengels = () => (
+const Sensate = () => (
   <React.Fragment>
     <Header title="Sensate Focus" />
     <Section>
@@ -273,4 +273,4 @@ const Kengels = () => (
   </React.Fragment>
 );
 
-export default Kengels;
+export default Sensate;

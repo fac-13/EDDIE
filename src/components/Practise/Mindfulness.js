@@ -60,7 +60,7 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
-const Kengels = () => (
+const Mindfulness = () => (
   <React.Fragment>
     <Header title="Mindful Stimulation for Men" />
     <Section>
@@ -284,4 +284,4 @@ const Kengels = () => (
   </React.Fragment>
 );
 
-export default Kengels;
+export default Mindfulness;

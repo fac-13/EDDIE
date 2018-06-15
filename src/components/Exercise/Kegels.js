@@ -66,7 +66,7 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
-const Kengels = () => (
+const Kegels = () => (
   <React.Fragment>
     <Header title="Kegels for Men" />
     <Section>
@@ -169,4 +169,4 @@ const Kengels = () => (
   </React.Fragment>
 );
 
-export default Kengels;
+export default Kegels;
