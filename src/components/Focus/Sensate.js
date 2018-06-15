@@ -225,33 +225,49 @@ const Kengels = () => (
 
         <Title>Stage 3: Pleasure giving/taking including the genitals </Title>
 
-<P>
-Now you can include touching of the breasts and genital areas. You might want to spend several sessions or weeks on each phase of this stage before moving on to the next.
-</P>
-<P>
-Continue to pay attention to the other parts of the body that you explored in the previous sessions as well as the new areas that you are incorporating.
-</P>
-<P>
-The main aim of this stage is to increase each person’s pleasure and awareness of each other’s responses to different types of stimulation. If one or both of you become sexually aroused, this is fine but it is not the aim of the exercise.
-</P>
+        <P>
+          Now you can include touching of the breasts and genital areas. You
+          might want to spend several sessions or weeks on each phase of this
+          stage before moving on to the next.
+        </P>
+        <P>
+          Continue to pay attention to the other parts of the body that you
+          explored in the previous sessions as well as the new areas that you
+          are incorporating.
+        </P>
+        <P>
+          The main aim of this stage is to increase each person’s pleasure and
+          awareness of each other’s responses to different types of stimulation.
+          If one or both of you become sexually aroused, this is fine but it is
+          not the aim of the exercise.
+        </P>
 
-<Subtitle>Instructions</Subtitle>
+        <Subtitle>Instructions</Subtitle>
         <List>
+          <Item>First, touch the breasts and nipples.</Item>
           <Item>
-          First, touch the breasts and nipples. 
+            hen include the areas around the genitals, including the testicles
+            for men. You could do this with one person lying on their back, or
+            sitting up against a support. Also, you might find helpful to sit
+            with your partner holding them from behind or both facing each other
+            with the person being touched’ legs around the other person’s hips.
+            Make sure you are both comfortable with your backs supported if
+            necessary.
           </Item>
           <Item>
-          hen include the areas around the genitals, including the testicles for men. You could do this with one person lying on their back, or sitting up against a support. Also, you might find helpful to sit with your partner holding them from behind or both facing each other with the person being touched’ legs around the other person’s hips. Make sure you are both comfortable with your backs supported if necessary. 
-          </Item>
-          <Item>
-          Finally, start touching the genitals themselves (the clitoris and entrance to the vagina on a woman, or the penis, shaft and glans on a man). 
+            Finally, start touching the genitals themselves (the clitoris and
+            entrance to the vagina on a woman, or the penis, shaft and glans on
+            a man).
           </Item>
         </List>
 
         <P style={{ fontWeight: '700' }}>
-        After a while you may also want to incorporate oral as well as manual touching (kissing, licking and sucking) into both non-genital and genital touching. You may also want to experiment with vibrators of different shapes and sizes (e.g. back massagers available from pharmacies, specialised vibrators available from specialist shops).
+          After a while you may also want to incorporate oral as well as manual
+          touching (kissing, licking and sucking) into both non-genital and
+          genital touching. You may also want to experiment with vibrators of
+          different shapes and sizes (e.g. back massagers available from
+          pharmacies, specialised vibrators available from specialist shops).
         </P>
-
       </Article>
     </Section>
   </React.Fragment>

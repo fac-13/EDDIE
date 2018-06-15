@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 import { Physical } from '../Assets/Assets';
 
 import Header from '../Shared/Header/Header';
@@ -42,8 +42,7 @@ const Curiosity = () => (
         </P>
 
         <P>
-          You can start on your own by using the
-          <a>mindful masturbation exercise</a>.
+          You can start on your own by using the <Link to="mindfulness">mindful masturbation exercise</Link>.
         </P>
 
         <P>
@@ -53,12 +52,12 @@ const Curiosity = () => (
 
         <P>
           You might also find helpful to increase your awareness of the muscles
-          around the genitals by practising <a>Kegels for Men</a>.
+          around the genitals by practising <Link to="kengels">Kegels for Men</Link>.
         </P>
 
         <P>
           Finally, if you have a sexual partner, you can explore together sexual
-          experiences that do not involve penetration (<a>Sensate Focus</a>).
+          experiences that do not involve penetration (<Link to="sensate">Sensate Focus</Link>).
         </P>
 
         <P>
