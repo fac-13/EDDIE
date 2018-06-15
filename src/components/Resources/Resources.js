@@ -62,13 +62,13 @@ const Resources = () => (
     <Header title="Resources" />
     <Section>
       <Article>
-        <Button to="mindfulness" style={{ backgroundColor: '#517B7B' }}>
+        <Button to="mindfulness" style={{ backgroundColor: '#7CA5A9' }}>
           Male Mindful Self Practice
         </Button>
-        <Button to="kengels" style={{ backgroundColor: '#D73C36' }}>
+        <Button to="kengels" style={{ backgroundColor: '#FD8489' }}>
           Kegel exercises for men
         </Button>
-        <Button to="sensate" style={{ backgroundColor: '#24815B' }}>
+        <Button to="sensate" style={{ backgroundColor: '#71BE63' }}>
           Sensate focus
         </Button>
 
