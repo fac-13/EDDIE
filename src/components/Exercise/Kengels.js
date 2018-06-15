@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Header from '../Shared/Header/Header';
+
+import { Physical } from '../Assets/Assets';
 import { flexContainer } from '../../utils/mixins';
 
 const Section = styled.section`
@@ -20,9 +22,15 @@ const Article = styled.article`
 const Title = styled.h2`
   font-weight: 700;
   font-size: 1.2em;
-  margin: 1em auto;
+  margin: 1em;
 `;
 
+
+const StyledPhysical = styled(Physical)`
+  height: 4rem;
+  width: 4rem;
+  margin: 2rem auto 0.5rem auto;
+`;
 
 const Subtitle = styled.h3`
   font-weight: 700;
@@ -63,6 +71,7 @@ const Kengels = () => (
     <Header title="Kegels for Men" />
     <Section>
       <Article>
+        <StyledPhysical />
         <P>
           There are a variety of techniques that can help you to develop better
           awareness and control of the various parts of your body that are
