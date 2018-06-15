@@ -7,8 +7,8 @@ const slidesData = [
   {
     type: 'PHYSICAL',
     list: [
-      'Surgery (e.g. prostate removal)',
       'Medications (e.g. anti-depressants, high-blood pressure medications)',
+      'Surgery (e.g. prostate removal)',
       'Recreational drugs (e.g. alchohol, cannabis)',
       'Tiredness/exhaustion',
       'Physical tension/stress'
@@ -20,9 +20,8 @@ const slidesData = [
   {
     type: 'PSYCHOLOGICAL',
     list: [
-      'Anxiety, worry or fear',
-      'Tension or stress',
-      'Fear of being rejected',
+      'Anxiety, tension or stress',
+      'Worry or fear of being rejected',
       'Shame or embarrassment',
       'Unrealistic expectations',
       'Depression',

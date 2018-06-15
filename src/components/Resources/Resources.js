@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { Link } from 'react-router-dom';
-
+import { flexContainer } from '../../utils/mixins';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
@@ -38,7 +37,7 @@ const P = styled.p`
 `;
 
 const Button = styled(Link)`
-  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  ${flexContainer('column', 'space-around', 'center')};
   border-radius: 5px;
   color: ${props => props.theme.white};
   height: 30px;
@@ -63,19 +62,19 @@ const Resources = () => (
     <Header title="Resources" />
     <Section>
       <Article>
-        <Button to="stories" style={{ backgroundColor: '#9ADA65' }}>
+        <Button to="mindfulness" style={{ backgroundColor: '#7CA5A9' }}>
           Male Mindful Self Practice
         </Button>
-        <Button to="stories" style={{ backgroundColor: '#7CA5A9' }}>
+        <Button to="kegels" style={{ backgroundColor: '#FD8489' }}>
           Kegel exercises for men
         </Button>
-        <Button to="stories" style={{ backgroundColor: '#FD8489' }}>
+        <Button to="sensate" style={{ backgroundColor: '#71BE63' }}>
           Sensate focus
         </Button>
 
         <H3>Recommended reading</H3>
 
-        <H4>Coping with Eectile Dysfunction</H4>
+        <H4>Coping with Erectile Dysfunction</H4>
         <P>by Barry McCarthy and Michael Metz</P>
 
         <H4>The New Male Sexuality</H4>
