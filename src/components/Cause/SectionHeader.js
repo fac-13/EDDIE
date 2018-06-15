@@ -12,7 +12,7 @@ const Header = styled.header`
   width: 100%;
   margin: auto;
   max-width: 1000px;
-  color: {$props => props.theme.darkBlue}
+  color: #1a5f67;
   font-weight: 300;
   opacity: 0.9;
   ${props =>
@@ -32,7 +32,7 @@ const Header = styled.header`
 const Title = styled.h2`
   font-weight: 700;
   font-size: 1.2em;
-  color: ${props => props.theme.white};
+  ${'' /* color: ${props => props.theme.white}; */}
 `;
 
 const StyledPhysical = styled(Physical)`

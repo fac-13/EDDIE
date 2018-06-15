@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { Link } from 'react-router-dom';
-
+import { flexContainer } from '../../utils/mixins';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
@@ -38,7 +37,7 @@ const P = styled.p`
 `;
 
 const Button = styled(Link)`
-  ${props => props.theme.flexContainer('row', 'center', 'center')};
+  ${flexContainer('column', 'space-around', 'center')};
   border-radius: 5px;
   color: ${props => props.theme.white};
   height: 30px;
