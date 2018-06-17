@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <title>404 - Error page</title>
+</head>
+
+<style>
+  body {
+    background: #B8F7F1;
+    color: #1A5F67;
+    font-family: 'Lato';
+    text-align: center;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  h1 {
+
+    font-size: 3em;
+    padding-top: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  div {
+    width: 50%;
+    margin: auto;
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  display: block;
+  background: #FF6F75;
+  border: 1px solid white;
+  font-weight: 300;
+  -webkit-border-radius: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+}
+
+button:focus, button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+</style>
+
+<body>
+
+  <h1>OOPS!</h1>
+  <br>
+  <h3>Something went wrong.....</h3>
+  <br>
+  <div>
+    <button><a href="./index.html">♂ Go Back</a></button>
+  </div>
+
+</body>
+
+</html>
