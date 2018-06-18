@@ -246,7 +246,7 @@ const Sensate = () => (
         <List>
           <Item>First, touch the breasts and nipples.</Item>
           <Item>
-            hen include the areas around the genitals, including the testicles
+            Then include the areas around the genitals, including the testicles
             for men. You could do this with one person lying on their back, or
             sitting up against a support. Also, you might find helpful to sit
             with your partner holding them from behind or both facing each other
