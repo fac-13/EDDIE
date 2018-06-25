@@ -93,20 +93,71 @@ const SlidesData = [
         text:
           'ED the first time he tried to have sex with a partner 2 years ago',
         intervention:
-          'Although we learn to use every part of our bodies as babies through our relationship with our parents or caretakers as a step to being socialised, we rarely have guidance how to use our bodies for pleasure. Most people learn about sex from pornography which is for entertainment rather than to educate, or peers. Its common for men at Peter’s age to feel overwhelmed by the expectations to perform sexually with limited experiences or support. Basic education about anatomy would be helpful for Peter to understand and explore his own body and that of his partner’s. Reading about male sexuality can help Peter develop a better understanding of his own self and the ongoing process of developing his own sexual self without fear and/or unrealistic expectations '
+          'Most people learn about sex from pornography which is mainly for entertainment. It is common for men at Peter’s age to feel overwhelmed by the expectations to perform sexually. Reading about male sexuality and anatomy can help Peter develop a better understanding of his own body and the ongoing process of developing his own sexual self without fear and/or unrealistic expectations.'
       },
       {
         type: 'physical',
         text: 'Masturbates compulsively 7-8 times a day',
         intervention:
-          'Peter’s body needs to become familiar being stimulated in the presence of another person. Although there is no fixed number of how often or how long someone can masturbate, compulsive masturbation can reduce sensitivity to the penis during that period'
+          'Peter’s body needs to become familiar being stimulated in the presence of another person. Although there is no fixed number of how often or how long someone can masturbate, compulsive masturbation can reduce sensitivity to the penis during that period.'
       },
       {
         type: 'psychological',
         text:
           'Does not feel as much pleasure as before when he masturbates. Worried about his penis becoming smaller',
         intervention:
-          'Anxiety and fear often show in the body as tension and stress, and masturbation or sex can be one way of relieving them. However, compulsive masturbation can indicate social anxiety in which case avoiding meeting others and using masturbating as a strategy to control/avoid anxiety will only make things worse in the long-term. Mindfulness could help Peter explore alternative ways to regulate physical tension and anxiety in his body, and become more aware of physical sensations'
+          'Anxiety and fear often show in the body as tension and stress, and masturbation or sex can be one way of relieving them. However, compulsive masturbation as a strategy to control or avoid anxiety will only make things worse in the long-term. Mindfulness could help Peter explore alternative ways to regulate physical tension and anxiety in his body, and become more aware of physical sensations.'
+      }
+    ]
+  },
+  {
+    name: 'Mohamed',
+    about: '36 years old, 9 years married',
+    symptoms: [
+      {
+        type: 'relational',
+        text: 'His spouse used to experience pain during sex',
+        intervention:
+          'Exploring with his partner their previous experiences in terms of feelings of fear or guilt; how they both hold responsibility for their experience. Exploring sensate focus to explore pleasure in sex rather than focus on penetration; and later explore positions with partner on top can be some helpful interventions.'
+      },
+      {
+        type: 'physical',
+        text:
+          'Although his wife learned how to manage pain, he now experiences ED',
+        intervention:
+          'Previous experiences of pain by his partner during sex are likely to have triggered Mohamed’s aversive system (sympathetic), causing tension and physical discomfort in the thought of potentially harming/causing pain to his partner during sex. Mindfulness could help Mohamed to understand his fear response and learn how stay calm in his own body.'
+      },
+      {
+        type: 'psychological',
+        text:
+          'Feels frustrated with this new development, as he believes his partner is now ready for more sex.',
+        intervention:
+          'Pain response by a partner can trigger feelings of fear and guilt that can lead to ED in men.'
+      }
+    ]
+  },
+  {
+    name: 'Ralph',
+    about: '44 years old',
+    symptoms: [
+      {
+        type: 'relational',
+        text: 'Tends to avoid relationships',
+        intervention:
+          'Ralph might need to discuss with a partner the possible impact of sexual abuse to their relationship in terms of feelings of fear about physical intimacy and relationships. Organisations such as relate.org.uk and tavistockrelationships.org provide support to couples that experience relational difficulties or challenges with intimacy.'
+      },
+      {
+        type: 'physical',
+        text: 'Has low desire for sex due to sexual abuse as an adolescent',
+        intervention:
+          'History of sexual abuse can trigger high levels of physical and emotional stress in sex leading to low sex-drive (desire) in the long term'
+      },
+      {
+        type: 'psychological',
+        text:
+          'Feels increasingly lonely and would like to be in a long-term relationship',
+        intervention:
+          'Ralph is likely to have associated sexual relationships with fear and feelings of vulnerability that might need to be addressed in psychotherapy. Also, organisations such as survivorsuk.org provide counselling and peer support groups.'
       }
     ]
   }
