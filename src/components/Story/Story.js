@@ -42,7 +42,17 @@ const Intervention = Symptom.extend`
 const Text = styled.p`
   width: 90%;
   font-weight: 300;
-  line-height: 2ch;
+
+  @media (min-width: 400px) {
+    line-height: 2ch;
+    font-size: 110%;
+  }
+`;
+
+const Instructions = styled.p`
+  text-align: center;
+  height: 8%;
+  margin: 5px;
 `;
 
 class Story extends React.Component {
@@ -92,6 +102,9 @@ class Story extends React.Component {
             )}
             <Man name={story.name} />
           </Content>
+          <Instructions>
+            Click each item to learn how {story.name} coped with ED
+          </Instructions>
         </Main>
       </Slide>
     );

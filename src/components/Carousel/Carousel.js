@@ -19,6 +19,7 @@ const Row = styled.div`
   ${flexContainer('row', 'space-between', 'center')};
   height: 100%;
   width: 100%;
+  max-width: 700px;
 `;
 
 const Carousel = ({ type, slides }) => (

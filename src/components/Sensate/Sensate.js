@@ -7,20 +7,21 @@ import { Relational } from '../Assets/Assets';
 import { flexContainer } from '../../utils/mixins';
 
 const StyledRelational = styled(Relational)`
-  height: 4rem;
-  width: 4rem;
-  margin: 2rem auto 0.5rem auto;
+  height: 150px;
+  width: 5rem;
 `;
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.blue};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 1000px;
   text-align: center;
 `;
@@ -67,7 +68,7 @@ const Warning = styled.div`
 
 const Sensate = () => (
   <React.Fragment>
-    <Header title="Sensate Focus" />
+    <Header title="Sensate Focus" border="#FD8489 solid 5px" />
     <Section>
       <Article>
         <StyledRelational />

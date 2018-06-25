@@ -5,9 +5,10 @@ import Header from '../Shared/Header/Header';
 import Sad from './Sad';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.blue};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
 `;
 
 const Article = styled.article`
@@ -24,7 +25,7 @@ const P = styled.p`
 
 const Aversive = () => (
   <React.Fragment>
-    <Header title="Aversive state" />
+    <Header title="Aversive state" border="0.3em solid #b8f7f1" />
     <Section>
       <Article>
         <Sad />

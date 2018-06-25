@@ -10,8 +10,11 @@ import Wave from './Wave';
 
 const Main = styled.main`
   ${flexContainer('column', 'space-between', 'center')};
+  height: 90%;
   width: 100%;
-  height: 100%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Buttons = styled.div`

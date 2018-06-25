@@ -5,10 +5,11 @@ import { flexContainer } from '../../utils/mixins';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
-  padding: 0.5em;
-  border-top: 0.3em solid ${props => props.theme.blue};
-  height: 80%;
   width: 100%;
+  height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
@@ -56,7 +57,7 @@ const Button = styled(Link)`
 
 const Mechanism = () => (
   <React.Fragment>
-    <Header title="The mechanism of erection" />
+    <Header title="The mechanism of erection" border="0.3em solid #b8f7f1" />
     <Section>
       <Article>
         <H2>Aversive state:</H2>

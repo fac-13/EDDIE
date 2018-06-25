@@ -7,14 +7,16 @@ import { Psychological } from '../Assets/Assets';
 import { flexContainer } from '../../utils/mixins';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.blue};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 1000px;
   text-align: center;
 `;
@@ -26,9 +28,8 @@ const Title = styled.h2`
 `;
 
 const StyledPsycho = styled(Psychological)`
-  height: 4rem;
-  width: 4rem;
-  margin: 2rem auto 0.5rem auto;
+  height: 150px;
+  width: 5rem;
 `;
 
 const List = styled.ul`
@@ -62,7 +63,7 @@ const Warning = styled.div`
 
 const Mindfulness = () => (
   <React.Fragment>
-    <Header title="Mindful Stimulation for Men" />
+    <Header title="Mindful Stimulation for Men" border="#7CA5A9 solid 5px" />
     <Section>
       <Article>
         <StyledPsycho />

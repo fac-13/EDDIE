@@ -17,11 +17,12 @@ export default styled(ButtonNext)`
   @media (min-width: 600px) {
     &:hover {
       background-color: ${props => props.theme.darkBlue};
-      opacity: 0.1;
+      opacity: 0.2;
       font-weight: bold;
       font-size: 5em;
       color: black;
       height: 100vh;
+      width: 8%;
     }
   }
 `;

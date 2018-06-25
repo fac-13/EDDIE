@@ -112,28 +112,10 @@ const SlidesData = [
   }
 ];
 
-const Main = styled.main`
-  ${flexContainer('column', 'space-around', 'center')};
-  height: 90%;
-  width: 100%;
-  @media (min-width: 700px) {
-    max-width: 700px;
-  }
-`;
-const Instructions = styled.p`
-  width: 80%;
-  text-align: center;
-  height: 8%;
-  margin: 5px;
-`;
-
 const Stories = () => (
   <React.Fragment>
     <Header title="Stories" />
-    <Main>
-      <Carousel type="stories" slides={SlidesData} />
-      <Instructions>Click each item to learn how he coped with ED</Instructions>
-    </Main>
+    <Carousel type="stories" slides={SlidesData} />
   </React.Fragment>
 );
 

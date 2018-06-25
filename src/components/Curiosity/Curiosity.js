@@ -6,15 +6,16 @@ import { Physical } from '../Assets/Assets';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.green};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
-  height: 87%;
+  margin: 1rem auto;
   text-align: center;
   max-width: 1000px;
 `;
@@ -22,8 +23,6 @@ const Article = styled.article`
 const Category = styled(Physical)`
   height: 150px;
   width: 5rem;
-  padding: 1rem;
-  margin: 1em auto 0 auto;
 `;
 
 const P = styled.p`
@@ -33,7 +32,7 @@ const P = styled.p`
 
 const Curiosity = () => (
   <React.Fragment>
-    <Header title="Cultivate your curiosity" />
+    <Header title="Cultivate your curiosity" border="#71BE63 solid 5px" />
     <Section>
       <Article>
         <Category />
@@ -42,7 +41,8 @@ const Curiosity = () => (
         </P>
 
         <P>
-          You can start on your own by using the <Link to="mindfulness">mindful masturbation exercise</Link>.
+          You can start on your own by using the{' '}
+          <Link to="mindfulness">mindful masturbation exercise</Link>.
         </P>
 
         <P>
@@ -52,12 +52,15 @@ const Curiosity = () => (
 
         <P>
           You might also find helpful to increase your awareness of the muscles
-          around the genitals by practising <Link to="kegels">Kegels for Men</Link>.
+          around the genitals by practising{' '}
+          <Link to="kegels">Kegels for Men</Link>.
         </P>
 
         <P>
           Finally, if you have a sexual partner, you can explore together sexual
-          experiences that do not involve penetration (<Link to="sensate">Sensate Focus</Link>).
+          experiences that do not involve penetration (<Link to="sensate">
+            Sensate Focus
+          </Link>).
         </P>
 
         <P>

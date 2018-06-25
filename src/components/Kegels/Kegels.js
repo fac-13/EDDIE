@@ -7,14 +7,16 @@ import { Physical } from '../Assets/Assets';
 import { flexContainer } from '../../utils/mixins';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.blue};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 1000px;
   text-align: center;
 `;
@@ -25,11 +27,9 @@ const Title = styled.h2`
   margin: 1em;
 `;
 
-
 const StyledPhysical = styled(Physical)`
-  height: 4rem;
-  width: 4rem;
-  margin: 2rem auto 0.5rem auto;
+  height: 150px;
+  width: 5rem;
 `;
 
 const Subtitle = styled.h3`
@@ -48,13 +48,13 @@ const Item = styled.li`
   width: 80%;
   list-style: initial;
   margin: 0.5em auto 0.5em auto;
-  text-align:left;
+  text-align: left;
 `;
 
 const P = styled.p`
   padding: 1em;
   text-align: left;
-  line-height:1.1rem;
+  line-height: 1.1rem;
 `;
 
 const Warning = styled.div`
@@ -68,7 +68,7 @@ const Warning = styled.div`
 
 const Kegels = () => (
   <React.Fragment>
-    <Header title="Kegels for Men" />
+    <Header title="Kegels for Men" border="#71BE63 solid 5px" />
     <Section>
       <Article>
         <StyledPhysical />

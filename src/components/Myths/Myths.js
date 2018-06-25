@@ -4,14 +4,16 @@ import styled from 'styled-components';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.slate};
   width: 100%;
-  height: 87%;
+  height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   text-align: center;
   max-width: 1000px;
 `;
@@ -35,7 +37,7 @@ const P = styled.p`
 
 const Myths = () => (
   <React.Fragment>
-    <Header title="Myths of male sexuality" />
+    <Header title="Myths of male sexuality" border="#517B7B solid 5px" />
     <Section>
       <Article>
         <Q>Sex is something you perform</Q>
