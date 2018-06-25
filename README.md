@@ -10,7 +10,7 @@ A simple web-app that gives info to men with ED
 
 ```bash
 git clone https://github.com/fac-13/SBSHS.git
-cd SBSHS
+cd EDDIE
 npm i
 ```
 
@@ -24,4 +24,3 @@ npm i
 - Jest
 - Travis
 - Babel
-
