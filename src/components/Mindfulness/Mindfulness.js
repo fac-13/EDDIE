@@ -61,6 +61,28 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
+const A = styled.a`
+  ${flexContainer('row', 'center', 'center')};
+  background-color: ${props => props.theme.darkBlue};
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  text-align: center;
+  height: 3em;
+  max-width: 250px;
+  margin: 1.5em auto;
+  box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
+  text-decoration: none;
+  text-transform: uppercase;
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+`;
+
 const Mindfulness = () => (
   <React.Fragment>
     <Header title="Mindful Stimulation for Men" border="#7CA5A9 solid 5px" />
@@ -280,6 +302,10 @@ const Mindfulness = () => (
           scripts, emotions, and mental images related to masturbation helping
           or hindering my personal and relationship sexual goals?
         </P>
+
+        <A href="https://sexualwellbeingforall.files.wordpress.com/2016/11/masturbationmen.pdf">
+          DOWNLOAD PDF
+        </A>
       </Article>
     </Section>
   </React.Fragment>

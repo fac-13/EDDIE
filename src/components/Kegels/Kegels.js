@@ -66,6 +66,28 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
+const A = styled.a`
+  ${flexContainer('row', 'center', 'center')};
+  background-color: ${props => props.theme.darkBlue};
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  text-align: center;
+  height: 3em;
+  max-width: 250px;
+  margin: 1.5em auto;
+  box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
+  text-decoration: none;
+  text-transform: uppercase;
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+`;
+
 const Kegels = () => (
   <React.Fragment>
     <Header title="Kegels for Men" border="#71BE63 solid 5px" />
@@ -164,6 +186,10 @@ const Kegels = () => (
           muscles involved in sexual pleasure. {"Don't"} forget – you are taking
           steps to improve your sexual health and wellbeing!
         </P>
+
+        <A href="https://sexualwellbeingforall.files.wordpress.com/2016/11/kegelexercisesmen.pdf">
+          DOWNLOAD PDF
+        </A>
       </Article>
     </Section>
   </React.Fragment>

@@ -60,6 +60,29 @@ const Button = styled(Link)`
   }
 `;
 
+const A = styled.a`
+  ${flexContainer('row', 'center', 'center')};
+  background-color: grey;
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  text-align: center;
+  height: 30px;
+  max-width: 80%;
+  font-size: 1.1rem;
+  box-shadow: 1px 4px 10px lightgrey;
+  text-decoration: none;
+  padding: 0.3rem;
+  margin: 1rem auto;
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px gray;
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 10px gray;
+  }
+`;
+
 const Resources = () => (
   <React.Fragment>
     <Header title="Resources" border="grey solid 5px" />
@@ -88,6 +111,11 @@ const Resources = () => (
 
         <H4>The Massage Secrets for Lovers</H4>
         <P>by Andrew Stanway</P>
+
+        <H4>For more resources click below</H4>
+        <A href="https://sexualwellbeingforall.wordpress.com">
+          Sexual Wellbeing For All
+        </A>
       </Article>
     </Section>
   </React.Fragment>

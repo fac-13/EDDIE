@@ -19,6 +19,7 @@ const Main = styled.main`
 
 const Buttons = styled.div`
   ${flexContainer('column', 'space-around', 'center')};
+  margin-top: 2rem;
   height: 50%;
   width: 100%;
   max-width: 800px;
@@ -29,7 +30,7 @@ const Buttons = styled.div`
 
 const Theory = () => (
   <React.Fragment>
-    <Header title="Theory" />
+    <Header title="Theory" border="#15bdb2 solid 5px" />
     <Main>
       <Buttons>
         <Link to="causes">Causes</Link>
