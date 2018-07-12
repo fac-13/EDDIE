@@ -5,13 +5,16 @@ import { flexContainer } from '../../utils/mixins';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
-  border-top: 0.3em solid grey;
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
+  margin: 1rem auto;
   margin: auto;
   max-width: 1000px;
   text-align: center;
@@ -57,18 +60,41 @@ const Button = styled(Link)`
   }
 `;
 
+const A = styled.a`
+  ${flexContainer('row', 'center', 'center')};
+  background-color: grey;
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  text-align: center;
+  height: 30px;
+  max-width: 80%;
+  font-size: 1.1rem;
+  box-shadow: 1px 4px 10px lightgrey;
+  text-decoration: none;
+  padding: 0.3rem;
+  margin: 1rem auto;
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px gray;
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 10px gray;
+  }
+`;
+
 const Resources = () => (
   <React.Fragment>
-    <Header title="Resources" />
+    <Header title="Resources" border="grey solid 5px" />
     <Section>
       <Article>
         <Button to="mindfulness" style={{ backgroundColor: '#7CA5A9' }}>
           Male Mindful Self Practice
         </Button>
-        <Button to="kegels" style={{ backgroundColor: '#FD8489' }}>
+        <Button to="kegels" style={{ backgroundColor: '#71BE63' }}>
           Kegel exercises for men
         </Button>
-        <Button to="sensate" style={{ backgroundColor: '#71BE63' }}>
+        <Button to="sensate" style={{ backgroundColor: '#FD8489' }}>
           Sensate focus
         </Button>
 
@@ -85,6 +111,11 @@ const Resources = () => (
 
         <H4>The Massage Secrets for Lovers</H4>
         <P>by Andrew Stanway</P>
+
+        <H4>For more resources click below</H4>
+        <A href="https://sexualwellbeingforall.wordpress.com">
+          Sexual Wellbeing For All
+        </A>
       </Article>
     </Section>
   </React.Fragment>

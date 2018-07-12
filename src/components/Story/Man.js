@@ -14,6 +14,8 @@ const Path = styled.path`
   ${props => (props.name === 'Martin' ? 'fill: #736aa0' : null)};
   ${props => (props.name === 'Daniel' ? 'fill: #a09f6a' : null)};
   ${props => (props.name === 'Jorge' ? 'fill: #a06a85' : null)};
+  ${props => (props.name === 'Ralph' ? 'fill: #6ee19d' : null)};
+  ${props => (props.name === 'Mohamed' ? 'fill: #f2a56a' : null)};
 `;
 
 const Man = ({ name }) => (

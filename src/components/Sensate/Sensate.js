@@ -7,20 +7,21 @@ import { Relational } from '../Assets/Assets';
 import { flexContainer } from '../../utils/mixins';
 
 const StyledRelational = styled(Relational)`
-  height: 4rem;
-  width: 4rem;
-  margin: 2rem auto 0.5rem auto;
+  height: 150px;
+  width: 5rem;
 `;
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.blue};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 1000px;
   text-align: center;
 `;
@@ -65,9 +66,31 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
+const A = styled.a`
+  ${flexContainer('row', 'center', 'center')};
+  background-color: ${props => props.theme.darkBlue};
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  text-align: center;
+  height: 3em;
+  max-width: 250px;
+  margin: 1.5em auto;
+  box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
+  text-decoration: none;
+  text-transform: uppercase;
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+`;
+
 const Sensate = () => (
   <React.Fragment>
-    <Header title="Sensate Focus" />
+    <Header title="Sensate Focus" border="#FD8489 solid 5px" />
     <Section>
       <Article>
         <StyledRelational />
@@ -246,7 +269,7 @@ const Sensate = () => (
         <List>
           <Item>First, touch the breasts and nipples.</Item>
           <Item>
-            hen include the areas around the genitals, including the testicles
+            Then include the areas around the genitals, including the testicles
             for men. You could do this with one person lying on their back, or
             sitting up against a support. Also, you might find helpful to sit
             with your partner holding them from behind or both facing each other
@@ -268,6 +291,10 @@ const Sensate = () => (
           different shapes and sizes (e.g. back massagers available from
           pharmacies, specialised vibrators available from specialist shops).
         </P>
+
+        <A href="https://sexualwellbeingforall.files.wordpress.com/2018/06/sensate-focus-men.pdf">
+          DOWNLOAD PDF
+        </A>
       </Article>
     </Section>
   </React.Fragment>

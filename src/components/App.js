@@ -17,9 +17,9 @@ import Aversive from './Aversive/Aversive';
 import Curiosity from './Curiosity/Curiosity';
 import Communication from './Communication/Communication';
 import Openness from './Openness/Openness';
-import Exercise from './Exercise/Kegels';
-import Focus from './Focus/Sensate';
-import Practise from './Practise/Mindfulness';
+import Kegels from './Kegels/Kegels';
+import Sensate from './Sensate/Sensate';
+import Mindfulness from './Mindfulness/Mindfulness';
 import ErrorPage from './ErrorPage/ErrorPage';
 
 const fontStack = [
@@ -66,9 +66,9 @@ const App = () => (
       <Route path="/communication" component={Communication} />
       <Route path="/curiosity" component={Curiosity} />
       <Route path="/openness" component={Openness} />
-      <Route path="/kegels" component={Exercise} />
-      <Route path="/sensate" component={Focus} />
-      <Route path="/mindfulness" component={Practise} />      
+      <Route path="/kegels" component={Kegels} />
+      <Route path="/sensate" component={Sensate} />
+      <Route path="/mindfulness" component={Mindfulness} />      
       <Route component={ErrorPage} />
     </Switch>
   </ThemeProvider>

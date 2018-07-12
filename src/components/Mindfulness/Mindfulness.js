@@ -7,14 +7,16 @@ import { Psychological } from '../Assets/Assets';
 import { flexContainer } from '../../utils/mixins';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.blue};
   width: 100%;
   height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   max-width: 1000px;
   text-align: center;
 `;
@@ -26,9 +28,8 @@ const Title = styled.h2`
 `;
 
 const StyledPsycho = styled(Psychological)`
-  height: 4rem;
-  width: 4rem;
-  margin: 2rem auto 0.5rem auto;
+  height: 150px;
+  width: 5rem;
 `;
 
 const List = styled.ul`
@@ -60,9 +61,31 @@ const Warning = styled.div`
   margin: 1em auto;
 `;
 
+const A = styled.a`
+  ${flexContainer('row', 'center', 'center')};
+  background-color: ${props => props.theme.darkBlue};
+  border-radius: 5px;
+  color: ${props => props.theme.white};
+  text-align: center;
+  height: 3em;
+  max-width: 250px;
+  margin: 1.5em auto;
+  box-shadow: 1px 4px 10px ${props => props.theme.darkBlue};
+  text-decoration: none;
+  text-transform: uppercase;
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0 10px ${props => props.theme.darkBlue};
+  }
+`;
+
 const Mindfulness = () => (
   <React.Fragment>
-    <Header title="Mindful Stimulation for Men" />
+    <Header title="Mindful Stimulation for Men" border="#7CA5A9 solid 5px" />
     <Section>
       <Article>
         <StyledPsycho />
@@ -279,6 +302,10 @@ const Mindfulness = () => (
           scripts, emotions, and mental images related to masturbation helping
           or hindering my personal and relationship sexual goals?
         </P>
+
+        <A href="https://sexualwellbeingforall.files.wordpress.com/2016/11/masturbationmen.pdf">
+          DOWNLOAD PDF
+        </A>
       </Article>
     </Section>
   </React.Fragment>

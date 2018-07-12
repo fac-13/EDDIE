@@ -2,32 +2,32 @@
 
 [![codecov](https://codecov.io/gh/fac-13/SBSHS/branch/master/graph/badge.svg)](https://codecov.io/gh/fac-13/SBSHS)
 
-Sexual Well-being for men with ED 
+Sexual Well-being for men with ED
 
 ## General Information
 
-At any point in time 30-40% of men report experiencing some form of sexual health difficulty that impacts on their emotional, physical and relational wellbeing. One most common sexual health problem is erectile difficulties (ED). 
+At any point in time 30-40% of men report experiencing some form of sexual health difficulty that impacts on their emotional, physical and relational wellbeing. One most common sexual health problem is erectile difficulties (ED).
 
-On the other hand, there is very limited information about basic physiology and understanding of our bodies in sex, which has a major impact on how far people will go to avoid or hide such issues from their partners and others. 
+On the other hand, there is very limited information about basic physiology and understanding of our bodies in sex, which has a major impact on how far people will go to avoid or hide such issues from their partners and others.
 
-The application aims to introduce helpful information regarding the sexual well-being of men with ED. 
+The application aims to introduce helpful information regarding the sexual well-being of men with ED.
 
 ## Design Sprint
 
-After a one day Design Thinking workshop with our client and Product Owner, we decided to create EDDIE; an informative web based app for men with ED. The application aims to help men understand the underlying causes of ED, navigate through some user stories  and find relevant resources quickly, instead of going via the NHS patient route.
+After a one day Design Thinking workshop with our client and Product Owner, we decided to create EDDIE; an informative web based app for men with ED. The application aims to help men understand the underlying causes of ED, navigate through some user stories and find relevant resources quickly, instead of going via the NHS patient route.
 
 ### Aims of the project:
 
-* Simple to use and accessible
-* User friendly and engaging
-* Read about realistic user stories and find out how they coped
-* Understand the main causes and mechanism behind ED
-* Access some basic exercises and interventions 
-* Adhere to current data protection laws
+- Simple to use and accessible
+- User friendly and engaging
+- Read about realistic user stories and find out how they coped
+- Understand the main causes and mechanism behind ED
+- Access some basic exercises and interventions
+- Adhere to current data protection laws
 
 ## Prototype
 
-An initial prototype was created for user testing, that can be accessed via this link: 
+An initial prototype was created for user testing, that can be accessed via this link:
 [Prototype v.1](https://projects.invisionapp.com/share/FWJZAFVSC7R)
 
 And an updated version of the prototype, based on corrections and user feedback :
@@ -50,55 +50,56 @@ Edmund wants to enjoy sex but has been experiencing erectile difficulties recent
 
 ### STORIES
 
-1. Daniel - married 25 years, has 1 child,
-2. Jorge - 22 years old,
-3. Martin - 32 years old,
-4. Peter - 19 years old,
-5. Mohamed - 36 years old, 9 years married,
-6. Ralph - 44 years old
+1.  Daniel - married 25 years, has 1 child,
+2.  Jorge - 22 years old,
+3.  Martin - 32 years old,
+4.  Peter - 19 years old,
+5.  Mohamed - 36 years old, 9 years married,
+6.  Ralph - 44 years old
 
 ### THEORY
 
 #### CAUSES
 
-1. Physical 
-2. Psychological
-3. Relational
+1.  Physical
+2.  Psychological
+3.  Relational
 
 ##### Steps you can take
 
-1. Cultivate your curiosity 
-2. Cultivate openness
-3. Cultivate communication 
+1.  Cultivate your curiosity
+2.  Cultivate openness
+3.  Cultivate communication
 
 #### MECHANISM
 
-1. Appetitive state
-2. Aversive state
+1.  Appetitive state
+2.  Aversive state
 
 #### MYTHS
 
 ### RESOURCES
 
-1. Male Mindful Self Practice
-2. Kegel exercises for men
-3. Sensate focus
+1.  Male Mindful Self Practice
+2.  Kegel exercises for men
+3.  Sensate focus
 
 ## Tech Stack
-* React
-* React Router
-* Pure React Carousel
-* Sass
-* Styled Components
-* Jest
-* Travis
-* Babel
+
+- React
+- React Router
+- Pure React Carousel
+- Sass
+- Styled Components
+- Jest
+- Travis
+- Babel
 
 ## How to run/setup local environment
 
 ```
 $ git clone https://github.com/fac-13/EDDIE.git
-``` 
+```
 
 To build and run the server:
 
@@ -113,4 +114,3 @@ $ npm run start
 $ cd client
 $ npm run test
 ```
-

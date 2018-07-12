@@ -6,23 +6,23 @@ import { Psychological } from '../Assets/Assets';
 import Header from '../Shared/Header/Header';
 
 const Section = styled.section`
-  border-top: 0.3em solid ${props => props.theme.slate};
   width: 100%;
-  height: 87%;
+  height: 90%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Article = styled.article`
   display: block;
-  margin: auto;
+  margin: 1rem auto;
   text-align: center;
   max-width: 1000px;
 `;
 
 const Category = styled(Psychological)`
-  height: 5rem;
+  height: 150px;
   width: 5rem;
-  padding: 1rem;
-  margin: 1em auto 0 auto;
 `;
 
 const P = styled.p`
@@ -32,7 +32,7 @@ const P = styled.p`
 
 const Openness = () => (
   <React.Fragment>
-    <Header title="Cultivate openness" />
+    <Header title="Cultivate openness" border="#7CA5A9 solid 5px" />
     <Section>
       <Article>
         <Category />

@@ -9,5 +9,8 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 export default styled(CarouselProvider)`
   ${flexContainer('column', 'space-between', 'center')};
   width: 100%;
-  height: 90%};
+  height: 90%
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;

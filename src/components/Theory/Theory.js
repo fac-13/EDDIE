@@ -10,12 +10,16 @@ import Wave from './Wave';
 
 const Main = styled.main`
   ${flexContainer('column', 'space-between', 'center')};
+  height: 90%;
   width: 100%;
-  height: 100%;
+  bottom: 0;
+  position: absolute;
+  overflow: auto;
 `;
 
 const Buttons = styled.div`
   ${flexContainer('column', 'space-around', 'center')};
+  margin-top: 2rem;
   height: 50%;
   width: 100%;
   max-width: 800px;
@@ -26,7 +30,7 @@ const Buttons = styled.div`
 
 const Theory = () => (
   <React.Fragment>
-    <Header title="Theory" />
+    <Header title="Theory" border="#15bdb2 solid 5px" />
     <Main>
       <Buttons>
         <Link to="causes">Causes</Link>

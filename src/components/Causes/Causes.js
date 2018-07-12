@@ -7,7 +7,9 @@ const slidesData = [
   {
     type: 'PHYSICAL',
     list: [
+      'Cardiovascular disorders (e.g heart disease, diabetes, high blood pressure)',
       'Medications (e.g. anti-depressants, high-blood pressure medications)',
+      'Neurological disorders (e.g. stroke)',
       'Surgery (e.g. prostate removal)',
       'Recreational drugs (e.g. alchohol, cannabis)',
       'Tiredness/exhaustion',

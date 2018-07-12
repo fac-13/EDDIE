@@ -9,6 +9,10 @@ const StyledHeader = styled.header`
   ${flexContainer('row', 'space-around', 'center')};
   width: 100%;
   height: 10%;
+  position: fixed;
+  height: 10%;
+  background: white;
+  z-index: 999;
 `;
 
 const Back = styled.div`
@@ -25,8 +29,8 @@ const Title = styled.h1`
   font-size: 1.3rem;
 `;
 
-const Header = ({ title, history }) => (
-  <StyledHeader>
+const Header = ({ title, history, border }) => (
+  <StyledHeader style={{ borderBottom: border }}>
     <Back onClick={history.goBack}>
       <svg
         width="16"
@@ -48,7 +52,8 @@ const Header = ({ title, history }) => (
 );
 Header.propTypes = {
   title: propTypes.string,
-  history: propTypes.object
+  history: propTypes.object,
+  border: propTypes.string
 };
 
 export default withRouter(Header);
